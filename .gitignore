@@ -1,6 +1,10 @@
-composer.phar
-/vendor/
+# These .gitignore rules are for developing the skeleton only.
+# You should use the rules provided in .gitignore.example for projects.
 
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Ignore composer binary and lock file
+composer.phar
+composer.lock
+
+# Ignore files deployed in vendor and web
+vendor/
+web/
