@@ -22,12 +22,13 @@
       "role": "DevOps"
     }
   ],
-  "minimum-stability": "alpha",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
     "vendor-dir": "vendor",
     "component-dir": "web/libraries",
     "preferred-install": "dist",
+    "secure-http": false,
     "github-protocols": [
       "https", "git", "ssh"
     ]
@@ -45,6 +46,7 @@
         "web/modules/exports/composer.json",
         "web/modules/exports/*/composer.json",
         "web/modules/exports/*/*/composer.json",
+        "web/modules/exports/*/*/*/composer.json",
         "web/themes/custom/*/composer.json"
       ],
       "recurse": false,
@@ -144,12 +146,11 @@
     "derhasi/composer-preserve-paths": "^0.1",
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/core": "8.1.*@stable",
-    "drush/drush": "^8.1",
-    "drupal/console": "^1.0",
     "zendframework/zend-hydrator": "~1.0"
   },
   "require-dev": {
-    "drupal/devel": "^1.0.0-rc1"
+    "drush/drush": "^8.1",
+    "drupal/console": "^1.0-rc16"
   },
   "require-disabled": {
   }
