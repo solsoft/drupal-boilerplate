@@ -22,12 +22,13 @@
       "role": "DevOps"
     }
   ],
-  "minimum-stability": "alpha",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
     "vendor-dir": "vendor",
     "component-dir": "web/libraries",
     "preferred-install": "dist",
+    "secure-http": false,
     "github-protocols": [
       "https", "git", "ssh"
     ]
@@ -44,6 +45,7 @@
         "web/modules/exports/composer.json",
         "web/modules/exports/*/composer.json",
         "web/modules/exports/*/*/composer.json",
+        "web/modules/exports/*/*/*/composer.json",
         "web/themes/custom/*/composer.json"
       ],
       "recurse": false,
@@ -116,11 +118,10 @@
     "robloach/component-installer": "^0.2",
     "derhasi/composer-preserve-paths": "^0.1",
     "davidbarratt/drupal-structure": "^1.0",
-    "drupal/drupal": "7.*@stable",
-    "drush/drush": "^7.4"
+    "drupal/drupal": "7.*@stable"
   },
   "require-dev": {
-    "drupal/devel": "^1.5"
+    "drush/drush": "^8.1"
   },
   "require-disabled": {
   }
