@@ -54,7 +54,7 @@
     }
   },
   "require": {
-    "drupal/views_slideshow": "^8.4",
+    "drupal/views_slideshow": "^4.4",
     "malsup/jquery-cycle": "^3.0",
     "briancherne/jquery-hoverIntent": "^1.8",
     "douglascrockford/JSON-js": "^1.0"

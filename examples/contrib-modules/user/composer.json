@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/anonymous_login": "^1.0-rc1",
+    "drupal/administerusersbyrole": "^2.0-alpha3",
+    "drupal/role_delegation": "^1.0-alpha1"
+  },
+  "require-dev": {
+    "drupal/masquerade": "^2.0-beta1"
+  },
+  "require-disabled": {
+  }
+}
