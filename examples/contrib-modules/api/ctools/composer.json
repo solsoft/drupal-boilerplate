@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/ctools": "^3.0-alpha27",
+    "drupal/page_manager": "^1.0-alpha24"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

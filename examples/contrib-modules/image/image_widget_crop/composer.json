@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/image_widget_crop": "^1.4"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

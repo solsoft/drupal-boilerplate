@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/ultimate_cron": "^2.0-alpha1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

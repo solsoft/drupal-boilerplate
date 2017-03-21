@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/facets": "^1.0-alpha8"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

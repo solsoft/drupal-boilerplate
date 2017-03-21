@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/redis": "1.0-beta1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}
