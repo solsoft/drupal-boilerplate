@@ -1,0 +1,58 @@
+# Ignore configuration files that may contain sensitive information.
+/*/sites/*/*settings*.php
+/*/sites/*/*settings*.yml
+
+# Ignore paths that contain user-generated content.
+/*/sites/*/files
+/*/sites/*/public
+/*/sites/*/private
+/*/sites/*/files-public
+/*/sites/*/files-private
+
+# Ignore paths that contain temporary files.
+/*/sites/*/translations
+/*/sites/*/tmp
+/*/sites/*/cache
+
+# Ignore other projects git repositories.
+/*/**/.git
+/vendor/**/.git
+
+# Ignore build caches
+/**/.sass-cache
+
+# Editor and IDE files
+*.un~
+*.kate-swp
+.project
+.buildpath
+.settings*
+.idea
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Archives and binaries
+*.tar
+*.gz
+*.bz2
+*.7z
+*.xz
+*.zip
+*.rar
+*.tgz
+*.iso
+*.jar
+*.dmg
+*.exe
+*.so
+*.dll
+
+# Logs and databases
+*.log
+*.sql
+

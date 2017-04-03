@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/omega": "^5.0-alpha7"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

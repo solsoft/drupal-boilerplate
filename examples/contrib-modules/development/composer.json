@@ -1,0 +1,17 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+  },
+  "require-dev": {
+    "drupal/devel": "^1.0.0-rc1",
+    "drupal/coder": "^2.12",
+    "drupal/styleguide": "^1.0-alpha2"
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "name": "solsoft/drupal-composer-skeleton",
+  "description": "Drupal Composer Skeleton",
+  "keywords": [ "drupal", "composer", "skeleton" ],
+  "homepage": "http://sol-soft.org/",
+  "support": {
+    "source": "https://github.com/solsoft/drupal-composer-skeleton",
+    "docs": "https://github.com/solsoft/drupal-composer-skeleton/wiki",
+    "wiki": "https://github.com/solsoft/drupal-composer-skeleton/wiki",
+    "issues": "https://github.com/solsoft/drupal-composer-skeleton/issues",
+    "email": "info@sol-soft.org"
+  },
+  "type": "project",
+  "license": [
+    "GPL-3.0+"
+  ],
+  "authors": [
+    {
+      "name": "Luís Pedro Algarvio",
+      "email": "lp.algarvio@gmail.com",
+      "homepage": "http://lp.algarvio.org",
+      "role": "DevOps"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "vendor-dir": "vendor",
+    "component-dir": "web/libraries",
+    "preferred-install": "dist",
+    "autoloader-suffix": "Drupal8",
+    "secure-http": false,
+    "github-protocols": [ "https", "git", "ssh" ]
+  },
+  "extra": {
+    "_readme": [
+      "Composer reads recursively composer.json files from the paths specified",
+      "on merge-plugin section and will consider the extra config section.",
+      "By default Drupal loads the autoloader from ./vendor/autoload.php.",
+      "To change the autoloader you can edit ./autoload.php."
+    ],
+    "patches-file": "composer.patches.json",
+    "merge-plugin": {
+      "require": [
+        "composer.local.json"
+      ],
+      "include": [
+        "web/core/composer.json",
+        "web/profiles/custom/*/composer.json",
+        "web/modules/custom/*/composer.json",
+        "web/modules/exports/composer.json",
+        "web/modules/exports/*/composer.json",
+        "web/modules/exports/*/*/composer.json",
+        "web/modules/exports/*/*/*/composer.json",
+        "web/themes/custom/*/composer.json"
+      ],
+      "recurse": false,
+      "replace": false,
+      "merge-dev": true,
+      "merge-extra": true
+    },
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "drush/contrib/{$name}": ["type:drupal-drush"]
+    },
+    "preserve-paths": [
+      "web/profiles/contrib",
+      "web/profiles/custom",
+      "web/modules/contrib",
+      "web/modules/custom",
+      "web/modules/exports",
+      "web/themes/contrib",
+      "web/themes/custom",
+      "web/libraries",
+      "drush/contrib",
+      "web/sites/*/*settings*.php",
+      "web/sites/*/*settings*.yml",
+      "web/sites/*/files",
+      "web/sites/*/public",
+      "web/sites/*/private",
+      "web/sites/*/files-public",
+      "web/sites/*/files-private"
+    ],
+    "drupal-scaffold": {
+      "source": "http://cgit.drupalcode.org/drupal/plain/{path}?h={version}",
+      "excludes": [
+        "autoload.php",
+        "vendor",
+        "composer.json",
+        "composer.lock"
+      ],
+      "includes": [
+        "example.gitignore",
+        ".gitattributes",
+        ".editorconfig",
+        ".csslintrc",
+        ".eslintignore",
+        ".eslintrc",
+        ".htaccess",
+        "web.config",
+        "robots.txt",
+        "README.txt",
+        "index.php",
+        "update.php",
+        "profiles/README.txt",
+        "modules/README.txt",
+        "themes/README.txt",
+        "sites/README.txt",
+        "sites/example.sites.php",
+        "sites/example.settings.local.php",
+        "sites/default/default.settings.php",
+        "sites/default/default.services.yml",
+        "sites/development.services.yml"
+      ],
+      "initial": {
+        "sites/default/default.services.yml": "sites/default/services.yml",
+        "sites/default/default.settings.php": "sites/default/settings.php"
+      },
+      "omit-defaults": false
+    }
+  },
+  "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "pre-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+    ],
+    "pre-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+    ],
+    "post-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+      "find web/ -type d | grep .git | xargs rm -rf",
+      "find vendor/ -type d | grep .git | xargs rm -rf",
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+    ],
+    "post-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+      "find web/ -type d | grep .git | xargs rm -rf",
+      "find vendor/ -type d | grep .git | xargs rm -rf",
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+    ],
+    "post-create-project-cmd": [
+      "rm -f README.md LICENSE travis.yml .gitignore",
+      "mv .gitignore.example .gitignore",
+      "mv examples/* web/modules/exports/"
+    ]
+  },
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ],
+    "psr-4": {
+      "Drupal\\Core\\Composer\\": "web/core/lib/Drupal/Core/Composer"
+    }
+  },
+  "repositories": {
+    "composer": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "conflict": {
+    "drupal/core": "7.*",
+    "drupal/drupal": "7.*"
+  },
+  "require": {
+    "cweagans/composer-patches": "^1.6",
+    "wikimedia/composer-merge-plugin": "^1.3",
+    "composer/installers": "^1.2",
+    "robloach/component-installer": "^0.2",
+    "derhasi/composer-preserve-paths": "^0.1",
+    "webmozart/path-util": "^2.3",
+    "drupal-composer/drupal-scaffold": "^2.2",
+    "webflo/drupal-finder": "^0.2",
+    "drupal/core": "8.2.*@stable",
+    "zendframework/zend-hydrator": "~1.0"
+  },
+  "require-dev": {
+    "drush/drush": "^8.2",
+    "drupal/console": "^1.0-rc16"
+  },
+  "require-disabled": {
+  }
+}

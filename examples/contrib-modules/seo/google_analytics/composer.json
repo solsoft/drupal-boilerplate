@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/google_analytics": "^2.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}
