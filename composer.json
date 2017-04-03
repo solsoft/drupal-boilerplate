@@ -186,7 +186,7 @@
     "zendframework/zend-hydrator": "~1.0"
   },
   "require-dev": {
-    "drush/drush": "^8.2",
+    "drush/drush": "^8.1",
     "drupal/console": "^1.0-rc16"
   },
   "require-disabled": {
