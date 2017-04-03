@@ -1,49 +1,25 @@
 # Ignore configuration files that may contain sensitive information.
-docroot/sites/*/*settings*.php
-docroot/sites/*/*settings*.yml
-web/sites/*/*settings*.php
-web/sites/*/*settings*.yml
-sites/*/*settings*.php
-sites/*/*settings*.yml
+/*/sites/*/*settings*.php
+/*/sites/*/*settings*.yml
 
 # Ignore paths that contain user-generated content.
-docroot/files/
-docroot/sites/*/files
-docroot/sites/*/public
-docroot/sites/*/private
-docroot/sites/*/files-public
-docroot/sites/*/files-private
-web/files/
-web/sites/*/files
-web/sites/*/public
-web/sites/*/private
-web/sites/*/files-public
-web/sites/*/files-private
-files/
-sites/*/files
-sites/*/public
-sites/*/private
-sites/*/files-public
-sites/*/files-private
+/*/sites/*/files
+/*/sites/*/public
+/*/sites/*/private
+/*/sites/*/files-public
+/*/sites/*/files-private
 
 # Ignore paths that contain temporary files.
-docroot/cache/
-docroot/sites/*/translations
-docroot/sites/*/tmp
-web/cache/
-web/sites/*/translations
-web/sites/*/tmp
-cache/
-sites/*/translations
-sites/*/tmp
+/*/sites/*/translations
+/*/sites/*/tmp
+/*/sites/*/cache
 
 # Ignore other projects git repositories.
-/docroot/**/.git
-/web/**/.git
+/*/**/.git
 /vendor/**/.git
 
 # Ignore build caches
-.sass-cache
+/**/.sass-cache
 
 # Editor and IDE files
 *.un~
