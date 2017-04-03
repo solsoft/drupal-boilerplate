@@ -182,11 +182,11 @@
     "webmozart/path-util": "^2.3",
     "drupal-composer/drupal-scaffold": "^2.2",
     "webflo/drupal-finder": "^0.2",
-    "drupal/core": "8.2.*@stable",
+    "drupal/core": "8.0.*@stable",
     "zendframework/zend-hydrator": "~1.0"
   },
   "require-dev": {
-    "drush/drush": "^8.2",
+    "drush/drush": "^8.1",
     "drupal/console": "^1.0-rc16"
   },
   "require-disabled": {
