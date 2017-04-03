@@ -6,10 +6,10 @@
   "repositories": {
   },
   "require": {
-    "drupal/image_effects": "^1.0-beta1"
   },
   "require-dev": {
   },
   "require-disabled": {
+    "drupal/image_effects": "^1.0-beta1"
   }
 }

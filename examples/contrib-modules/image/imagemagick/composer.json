@@ -6,11 +6,11 @@
   "repositories": {
   },
   "require": {
-    "drupal/imagemagick": "^1.0-alpha6",
     "drupal/imagick": "^1.0"
   },
   "require-dev": {
   },
   "require-disabled": {
+    "drupal/imagemagick": "^1.0-alpha6"
   }
 }

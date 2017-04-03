@@ -6,11 +6,11 @@
   "repositories": {
   },
   "require": {
-    "drupal/search_api_solr": "^1.0-beta1",
-    "drupal/search_api_solr_multilingual": "^1.0-alpha3"
   },
   "require-dev": {
   },
   "require-disabled": {
+    "drupal/search_api_solr": "^1.0-beta1",
+    "drupal/search_api_solr_multilingual": "^1.0-alpha3"
   }
 }
