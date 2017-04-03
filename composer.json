@@ -28,12 +28,17 @@
     "vendor-dir": "vendor",
     "component-dir": "web/libraries",
     "preferred-install": "dist",
+    "autoloader-suffix": "Drupal8",
     "secure-http": false,
-    "github-protocols": [
-      "https", "git", "ssh"
-    ]
+    "github-protocols": [ "https", "git", "ssh" ]
   },
   "extra": {
+    "_readme": [
+      "Composer reads recursively composer.json files from the paths specified",
+      "on merge-plugin section and will consider the extra config section.",
+      "By default Drupal loads the autoloader from ./vendor/autoload.php.",
+      "To change the autoloader you can edit ./autoload.php."
+    ],
     "patches-file": "composer.patches.json",
     "merge-plugin": {
       "require": [
@@ -83,24 +88,40 @@
       "web/sites/*/files-private"
     ],
     "drupal-scaffold": {
-      "source": "https://ftp.drupal.org/files/projects/drupal-{version}.tar.gz",
+      "source": "http://cgit.drupalcode.org/drupal/plain/{path}?h={version}",
       "excludes": [
         "autoload.php",
         "vendor",
-        "drush"
+        "composer.json",
+        "composer.lock"
       ],
       "includes": [
-        ".gitkeep",
-        "composer.json",
-        "composer.lock",
         "example.gitignore",
-        "LICENSE.txt",
+        ".gitattributes",
+        ".editorconfig",
+        ".csslintrc",
+        ".eslintignore",
+        ".eslintrc",
+        ".htaccess",
+        "web.config",
+        "robots.txt",
         "README.txt",
-        "core",
-        "profiles",
-        "modules",
-        "themes"
+        "index.php",
+        "update.php",
+        "profiles/README.txt",
+        "modules/README.txt",
+        "themes/README.txt",
+        "sites/README.txt",
+        "sites/example.sites.php",
+        "sites/example.settings.local.php",
+        "sites/default/default.settings.php",
+        "sites/default/default.services.yml",
+        "sites/development.services.yml"
       ],
+      "initial": {
+        "sites/default/default.services.yml": "sites/default/services.yml",
+        "sites/default/default.settings.php": "sites/default/settings.php"
+      },
       "omit-defaults": false
     }
   },
@@ -115,18 +136,32 @@
     "post-install-cmd": [
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
       "find web/ -type d | grep .git | xargs rm -rf",
-      "find vendor/ -type d | grep .git | xargs rm -rf"
+      "find vendor/ -type d | grep .git | xargs rm -rf",
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
     ],
     "post-update-cmd": [
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
       "find web/ -type d | grep .git | xargs rm -rf",
-      "find vendor/ -type d | grep .git | xargs rm -rf"
+      "find vendor/ -type d | grep .git | xargs rm -rf",
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+    ],
+    "post-create-project-cmd": [
+      "rm -f README.md LICENSE travis.yml .gitignore",
+      "mv .gitignore.example .gitignore",
+      "mv examples/* web/modules/exports/"
     ]
   },
   "autoload": {
     "classmap": [
       "scripts/composer/ScriptHandler.php"
-    ]
+    ],
+    "psr-4": {
+      "Drupal\\Core\\Composer\\": "web/core/lib/Drupal/Core/Composer"
+    }
   },
   "repositories": {
     "composer": {
@@ -144,7 +179,9 @@
     "composer/installers": "^1.2",
     "robloach/component-installer": "^0.2",
     "derhasi/composer-preserve-paths": "^0.1",
+    "webmozart/path-util": "^2.3",
     "drupal-composer/drupal-scaffold": "^2.2",
+    "webflo/drupal-finder": "^0.2",
     "drupal/core": "8.2.*@stable",
     "zendframework/zend-hydrator": "~1.0"
   },
