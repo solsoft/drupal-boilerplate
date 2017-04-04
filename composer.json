@@ -101,7 +101,7 @@
         ".editorconfig",
         ".csslintrc",
         ".eslintignore",
-        ".eslintrc",
+        ".eslintrc.json",
         ".htaccess",
         "web.config",
         "robots.txt",
@@ -187,7 +187,8 @@
   },
   "require-dev": {
     "drush/drush": "^8.1",
-    "drupal/console": "^1.0-rc16"
+    "drupal/console": "^1.0-rc16",
+    "drupal/coder": "^8.2.11"
   },
   "require-disabled": {
   }
