@@ -29,11 +29,15 @@
     "component-dir": "web/libraries",
     "preferred-install": "dist",
     "secure-http": false,
-    "github-protocols": [
-      "https", "git", "ssh"
-    ]
+    "github-protocols": [ "https", "git", "ssh" ]
   },
   "extra": {
+    "_readme": [
+      "Composer reads recursively composer.json files from the paths specified",
+      "on merge-plugin section and will consider the extra config section.",
+      "By default Drupal loads the autoloader from ./vendor/autoload.php.",
+      "To change the autoloader you can edit ./autoload.php."
+    ],
     "patches-file": "composer.patches.json",
     "merge-plugin": {
       "require": [
@@ -89,12 +93,23 @@
     "post-install-cmd": [
       "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate",
       "find web/ -type d | grep .git | xargs rm -rf",
-      "find vendor/ -type d | grep .git | xargs rm -rf"
+      "find vendor/ -type d | grep .git | xargs rm -rf",
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
     ],
     "post-update-cmd": [
       "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate",
       "find web/ -type d | grep .git | xargs rm -rf",
-      "find vendor/ -type d | grep .git | xargs rm -rf"
+      "find vendor/ -type d | grep .git | xargs rm -rf",
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+    ],
+    "post-create-project-cmd": [
+      "rm -f README.md LICENSE travis.yml .gitignore",
+      "mv .gitignore.example .gitignore",
+      "mv examples/* web/modules/exports/"
     ]
   },
   "autoload": {
