@@ -1,28 +1,54 @@
 # drupal-composer-skeleton
-Composer skeleton for Drupal projects.
-Using Drupal 7 and 8, Composer and associated plugins, and the [drupal packagist](https://packagist.drupal-composer.org/) repository.
-
-Requires [Composer](https://getcomposer.org/).
+Composer skeleton for deploying new Drupal projects. Based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).  
+Using [Drupal](https://drupal.org/), [Composer](https://getcomposer.org/) and associated plugins, and the official [packages.drupal.org](http://drupal-composer.org/) repository.  
+Examples are provided for a series of modules and themes and are included in the `composer create-project` process.
 
 ## Drupal versions supported
-- Drupal 7.x
-- Drupal 8.0.x
+- Drupal 8.3.x
+- Drupal 8.2.x
 - Drupal 8.1.x
+- Drupal 8.0.x
+- Drupal 7.x
 
-## Recipes
-- Drupal 7.x
-- Drupal 7.x-plus (Drupal 8 directory structure look-alike)
-- Drupal 8.0.x
-- Drupal 8.1.x
+Drupal 7.x is being deployed with a Drupal 8 look alike directory structure, using [davidbarratt/drupal-structure](https://github.com/davidbarratt/drupal-structure).
+
+## Release branches
+- 8.3.x   - releases branch for Drupal 8.3.x
+- 8.2.x   - releases branch for Drupal 8.2.x
+- 8.1.x   - releases branch for Drupal 8.1.x
+- 8.0.x   - releases branch for Drupal 8.0.x
+- 7.x     - releases branch for Drupal 7.x
+
+## Development branches
+- 8.x-dev - development branch for latest Drupal 8.x
+- 7.x-dev - development branch for latest Drupal 7.x
 
 ## Usage
 
-Consult the Composer reference on standard usage.
+Before starting, consult the Composer reference for standard usage instructions.  
+Use `composer create-project` to deploy a new project, specifying one of the release branches.
 
-Basic commands:
 ```
-composer install
-composer update
+branch="8.3.x";
+composer create-project solsoft/drupal-composer-skeleton:$branch my-project --stability dev --no-interaction;
+cd my-project;
+composer install;
+composer update;
+composer show;
+```
+
+## Contributing
+
+Clone the git repository pointing to one of the development branches.  
+Merge requests should be submitted against these branches.
+
+```
+branch="8.x-dev";
+git clone -b $branch git@github.com:solsoft/drupal-composer-skeleton.git;
+cd drupal-composer-skeleton;
+composer install;
+composer update;
+composer show;
 ```
 
 ## Credits
@@ -36,7 +62,7 @@ The following composer plugins were used:
 - [davidbarratt/drupal-structure](https://github.com/davidbarratt/drupal-structure), to make the directory structure of Drupal 6/7 look like Drupal 8
 - [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold), to add missing files from Drupal 8 distribution
 
-Additional code was used from [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).
+Forked from [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).
 
 Drupal Composer Skeleton  
 Copyright (C) 2016 SOL-Soft  
