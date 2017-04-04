@@ -6,8 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/token": "^1.0-rc1",
-    "drupal/diff": "^1.0-rc1"
+    "drupal/eu_cookie_compliance": "^1.0-beta7"
   },
   "require-dev": {
   },

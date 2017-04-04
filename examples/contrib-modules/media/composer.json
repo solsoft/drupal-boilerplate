@@ -1,0 +1,20 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/media_entity": "^1.6",
+    "drupal/media_entity_image": "^1.2",
+    "drupal/media_entity_audio": "^1.0-beta3",
+    "drupal/video_embed_field": "^1.4"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+    "drupal/file_entity": "^2.0-beta3",
+    "drupal/remote_stream_wrapper": "^1.0"
+  }
+}

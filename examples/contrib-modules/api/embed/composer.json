@@ -6,10 +6,9 @@
   "repositories": {
   },
   "require": {
-    "drupal/token": "^1.0-rc1",
-    "drupal/diff": "^1.0-rc1"
   },
   "require-dev": {
+    "drupal/embed": "^1.0"
   },
   "require-disabled": {
   }

@@ -6,7 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/module_filter": "^3.0"
+    "drupal/module_filter": "^3.0",
+    "drupal/coffee": "^1.0-beta2"
   },
   "require-dev": {
   },

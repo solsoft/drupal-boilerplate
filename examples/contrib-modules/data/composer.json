@@ -6,8 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/file_entity": "^2.0-beta3",
-    "drupal/remote_stream_wrapper": "^1.0"
+    "drupal/services": "^4.0-beta3"
   },
   "require-dev": {
   },

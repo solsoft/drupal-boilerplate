@@ -6,8 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/token": "^1.0-rc1",
-    "drupal/diff": "^1.0-rc1"
+    "drupal/webform": "5.0-beta9",
+    "drupal/contact_storage": "^1.0-beta8"
   },
   "require-dev": {
   },

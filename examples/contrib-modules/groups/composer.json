@@ -6,8 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/token": "^1.0-rc1",
-    "drupal/diff": "^1.0-rc1"
+    "drupal/group": "^1.0-beta5"
   },
   "require-dev": {
   },

@@ -6,11 +6,10 @@
   "repositories": {
   },
   "require": {
-    "drupal/token": "^1.0-rc1",
-    "drupal/diff": "^1.0-rc1"
   },
   "require-dev": {
   },
   "require-disabled": {
+    "drupal/backup_migrate": "^4.0-alpha1"
   }
 }

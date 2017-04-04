@@ -6,8 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/token": "^1.0-rc1",
-    "drupal/diff": "^1.0-rc1"
+    "drupal/honeypot": "^1.24",
+    "drupal/mollom": "^1.2"
   },
   "require-dev": {
   },
