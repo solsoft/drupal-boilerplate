@@ -1,6 +1,7 @@
 # drupal-composer-skeleton
 Composer skeleton for deploying new Drupal projects. Based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).  
 Using [Drupal](https://drupal.org/), [Composer](https://getcomposer.org/) and associated plugins, and the official [packages.drupal.org](http://drupal-composer.org/) repository.  
+Packages are published and updated regularly at [Packagist](https://packagist.org/packages/solsoft/drupal-composer-skeleton).  
 Examples are provided for a series of modules and themes and are included in the `composer create-project` process.
 
 ## Drupal versions supported
@@ -32,9 +33,11 @@ Use `composer create-project` to deploy a new project, specifying one of the rel
 branch="8.3.x";
 composer create-project solsoft/drupal-composer-skeleton:$branch my-project --stability dev --no-interaction;
 cd my-project;
-composer install;
+composer deploy-examples;
 composer update;
 composer show;
+composer site-install;
+composer site-run;
 ```
 
 ## Contributing
@@ -47,8 +50,11 @@ branch="8.x-dev";
 git clone -b $branch git@github.com:solsoft/drupal-composer-skeleton.git;
 cd drupal-composer-skeleton;
 composer install;
+composer deploy-examples;
 composer update;
 composer show;
+composer site-install;
+composer site-run;
 ```
 
 ## Credits
