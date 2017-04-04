@@ -1,0 +1,20 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/token": "^1.7",
+    "drupal/diff": "^3.3",
+    "drupal/entity_operations": "^1.10"
+  },
+  "require-dev": {
+    "drupal/bundle_copy": "^1.1",
+    "drupal/replicate": "^1.1",
+    "drupal/replicate_ui": "^1.5"
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/simplified_menu_admin": "^1.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

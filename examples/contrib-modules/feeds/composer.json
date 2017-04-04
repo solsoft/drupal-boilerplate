@@ -1,0 +1,21 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/job_scheduler": "^2.0-alpha3",
+    "drupal/feeds": "^2.0-beta3",
+    "drupal/feeds_tamper": "^1.1",
+    "drupal/feeds_tamper_string2id": "^1.1",
+    "drupal/feeds_tamper_conditional": "^1.0-rc1",
+    "drupal/feeds_ex": "^1.0-beta2",
+    "drupal/entityreference_feeds": "^1.0-beta3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

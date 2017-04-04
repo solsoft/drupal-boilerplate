@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/entity_view_mode": "^1.0-rc1",
+    "drupal/breakpoints": "^1.4",
+    "drupal/elements": "^1.4",
+    "drupal/picture": "^2.13"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

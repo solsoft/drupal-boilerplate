@@ -1,0 +1,19 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/rules": "^2.9",
+    "drupal/rules_conditional": "^1.0-beta2",
+    "drupal/entity_rules": "^1.0-alpha4",
+    "drupal/views_rules": "^1.0",
+    "drupal/cache_actions": "^2.0-alpha5"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

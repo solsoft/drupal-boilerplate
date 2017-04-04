@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/imagecache_actions": "^1.7"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

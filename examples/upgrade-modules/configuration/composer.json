@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/strongarm": "^2.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

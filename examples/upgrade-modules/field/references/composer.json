@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/entityreference": "^1.2",
+    "drupal/references": "^2.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

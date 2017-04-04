@@ -1,0 +1,22 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/field_readonly": "^1.1",
+    "drupal/field_permissions": "^1.0",
+    "drupal/field_permission_patterns": "^1.1",
+    "drupal/maxlength": "^3.2",
+    "drupal/field_group": "^1.5",
+    "drupal/select_or_other": "^2.22"
+  },
+  "require-dev": {
+    "drupal/field_tools": "^1.0-alpha9",
+    "drupal/field_rename": "^1.0-beta1"
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/purge": "^1.7",
+    "drupal/expire": "^2.0-rc4",
+    "drupal/cacheflush": "^3.0-rc3",
+    "drupal/ui_cache_clear": "^1.0-beta8"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

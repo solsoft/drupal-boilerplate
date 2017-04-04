@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/menu_admin_per_menu": "^1.1",
+    "drupal/menu_block": "^2.7"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

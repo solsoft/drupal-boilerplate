@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/date": "^2.9",
+    "drupal/entity_translation": "^1.0-beta6",
+    "drupal/i18n": "^1.15",
+    "drupal/l10n_update": "^2.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

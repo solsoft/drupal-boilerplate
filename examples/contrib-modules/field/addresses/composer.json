@@ -1,0 +1,17 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/name": "^1.10",
+    "drupal/addressfield": "^1.2",
+    "drupal/countries": "^2.3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

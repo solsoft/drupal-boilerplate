@@ -1,0 +1,20 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/features": "^2.10",
+    "drupal/features_banish": "^1.1",
+    "drupal/features_orphans": "^1.2",
+    "drupal/features_override": "^2.0-rc3",
+    "drupal/ftools": "^1.6"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+    "drupal/defaultconfig": "^1.0-alpha11"
+  }
+}

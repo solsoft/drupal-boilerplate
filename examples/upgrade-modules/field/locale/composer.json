@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/date": "^2.9",
+    "drupal/entity_translation": "^1.0-beta6"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

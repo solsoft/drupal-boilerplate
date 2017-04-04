@@ -1,0 +1,19 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/field_collection": "^1.0-beta12",
+    "drupal/field_collection_views": "^1.0-beta3",
+    "drupal/field_collection_fieldset": "^2.6",
+    "drupal/field_collection_table": "^1.0-beta5",
+    "drupal/field_collection_feeds": "^1.0-alpha4"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

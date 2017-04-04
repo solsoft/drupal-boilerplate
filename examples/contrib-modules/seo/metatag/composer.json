@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/metatag": "^1.21"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

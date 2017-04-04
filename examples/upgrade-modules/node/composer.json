@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/save_draft": "^1.4",
+    "drupal/date_popup_authored": "^1.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

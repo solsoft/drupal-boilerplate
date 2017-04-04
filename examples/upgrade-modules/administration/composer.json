@@ -9,7 +9,9 @@
   "repositories": {
   },
   "require": {
-    "drupal/omega": "^7.4",
+    "drupal/admin_language": "^1.0-beta4",
+    "drupal/admin_views": "^1.6",
+    "drupal/navbar": "^1.7",
     "components/backbone": "^1.0",
     "components/underscore": "^1.5",
     "components/modernizr": "^2.6"

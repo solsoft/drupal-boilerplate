@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/memcache": "^1.6",
+    "drupal/memcache_storage": "^1.4"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/eck": "^2.0-rc9",
+    "drupal/eck_pm": "^1.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+    "drupal/eck_revision": "^1.x-dev",
+    "drupal/eck_panels": "^1.x-dev"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/ctools": "^1.12",
+    "drupal/entity": "^1.0",
+    "drupal/libraries": "^2.3",
+    "drupal/uuid": "^1.0-beta2",
+    "drupal/views": "^3.15"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

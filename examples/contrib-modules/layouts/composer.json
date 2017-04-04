@@ -1,0 +1,19 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/layout": "^1.0-alpha6",
+    "drupal/layouter": "^1.10",
+    "drupal/ds": "^2.14",
+    "drupal/fences": "^1.2",
+    "drupal/clean_markup": "^2.9"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

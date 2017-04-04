@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/migrate": "^2.8",
+    "drupal/migrate_d2d": "^2.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

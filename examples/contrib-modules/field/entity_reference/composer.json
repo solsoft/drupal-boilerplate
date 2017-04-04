@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/inline_entity_form": "^1.8",
+    "drupal/entityreference_view_widget": "^2.0-rc7"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

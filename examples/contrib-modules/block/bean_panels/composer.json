@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/bean_pane": "^1.2",
+    "drupal/bean_panels": "^1.3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

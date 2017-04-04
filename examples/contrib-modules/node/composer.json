@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/node_view_permissions": "^1.5"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

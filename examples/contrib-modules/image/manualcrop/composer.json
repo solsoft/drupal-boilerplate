@@ -1,0 +1,49 @@
+{
+  "extra": {
+    "installer-paths": {
+      "web/libraries/jquery.imagesloaded/": ["desandro/imagesloaded"],
+      "web/libraries/jquery.imgareaselect/": ["odyniec/imgareaselect"]
+    }
+  },
+  "repositories": {
+    "desandro/imagesloaded": {
+      "type": "package",
+      "package": {
+        "name": "desandro/imagesloaded",
+        "version": "2.1.2",
+        "dist": {
+          "url": "https://github.com/desandro/imagesloaded/archive/v2.1.2.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "jquery.imagesloaded"
+        }
+      }
+    },
+    "odyniec/imgareaselect": {
+      "type": "package",
+      "package": {
+        "name": "odyniec/imgareaselect",
+        "version": "0.9.10",
+        "dist": {
+          "url": "http://odyniec.net/projects/imgareaselect/jquery.imgareaselect-0.9.10.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "jquery.imgareaselect"
+        }
+      }
+    }
+  },
+  "require": {
+    "drupal/manualcrop": "^1.6",
+    "desandro/imagesloaded": "^2.1",
+    "odyniec/imgareaselect": "^0.9"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

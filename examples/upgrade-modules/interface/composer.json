@@ -1,0 +1,17 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/dialog": "^2.0-beta1",
+    "drupal/quickedit": "^1.5",
+    "drupal/quickedit_tab": "^1.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

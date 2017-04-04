@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/i18nviews": "^3.0-alpha1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

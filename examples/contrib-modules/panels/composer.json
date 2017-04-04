@@ -1,0 +1,19 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/panels": "^3.9",
+    "drupal/panelizer": "^3.4",
+    "drupal/panels_everywhere": "^1.0-rc2",
+    "drupal/expire_panels": "^1.0-beta2",
+    "drupal/fieldable_panels_panes": "^1.11"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

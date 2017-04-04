@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/composer_autoloader": "^1.1",
+    "drupal/basic_auth": "^1.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

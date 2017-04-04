@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/search_api_solr": "^1.12"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

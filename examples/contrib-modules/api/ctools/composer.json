@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/pm_existing_pages": "^1.4",
+    "drupal/user_pages": "^1.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

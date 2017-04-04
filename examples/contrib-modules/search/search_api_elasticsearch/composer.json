@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/search_api_elasticsearch": "^1.0-alpha8"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}
