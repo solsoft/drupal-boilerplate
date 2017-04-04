@@ -1,0 +1,17 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/backup_migrate": "^3.1",
+    "drupal/backup_migrate_prune": "^2.1",
+    "drupal/backup_migrate_sftp": "^1.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/services_addressfield": "^1.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

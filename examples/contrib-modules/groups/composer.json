@@ -1,0 +1,17 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/group": "^1.0-beta6",
+    "drupal/og": "^2.9",
+    "drupal/og_vocab": "^1.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

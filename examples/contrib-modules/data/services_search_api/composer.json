@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+    "drupal/services_search_api": "^2.0-alpha1"
+  }
+}

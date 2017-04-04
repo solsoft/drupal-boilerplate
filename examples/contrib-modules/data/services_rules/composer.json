@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+    "drupal/services_rules": "^1.0-beta1"
+  }
+}

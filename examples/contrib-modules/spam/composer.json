@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/honeypot": "^1.22",
+    "drupal/mollom": "^2.15"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/webform": "4.14",
+    "drupal/entityform": "^2.0-rc3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}
