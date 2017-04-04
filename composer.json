@@ -139,7 +139,8 @@
       "find vendor/ -type d | grep .git | xargs rm -rf",
       "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
       "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
-      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep",
+      "rm -f web/drush.wrapper; cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
     ],
     "post-update-cmd": [
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
@@ -150,9 +151,27 @@
       "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
     ],
     "post-create-project-cmd": [
-      "rm -f README.md LICENSE travis.yml .gitignore",
-      "mv .gitignore.example .gitignore",
-      "mv examples/* web/modules/exports/"
+      "rm -f .gitignore",
+      "mv LICENSE LICENSE.composer",
+      "mv README.md README.composer.md",
+      "mv .gitignore.example .gitignore"
+    ],
+    "cleanup-project": [
+      "rm -Rf web/ vendor/ composer.lock"
+    ],
+    "deploy-directories": [
+      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+    ],
+    "deploy-examples": [
+      "rsync -ah examples/contrib-*/ web/modules/exports/"
+    ],
+    "site-install": [
+      "drush/drush.wrapper site-install --verbose --yes --root=../web --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
+    ],
+    "site-run": [
+      "drush/drush.wrapper runserver --root=../web --uri=127.0.0.1:8080 http://127.0.0.1:8080"
     ]
   },
   "autoload": {
