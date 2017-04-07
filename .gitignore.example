@@ -1,6 +1,6 @@
 # Ignore configuration files that may contain sensitive information.
 /*/sites/*/*settings*.php
-/*/sites/*/*settings*.yml
+/*/sites/*/*services*.yml
 !/*/sites/*/default.settings.php
 !/*/sites/*/default.services.yml
 
