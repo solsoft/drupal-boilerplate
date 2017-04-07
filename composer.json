@@ -26,7 +26,6 @@
   "prefer-stable": true,
   "config": {
     "vendor-dir": "vendor",
-    "component-dir": "web/libraries",
     "preferred-install": "dist",
     "autoloader-suffix": "Drupal8",
     "secure-http": false,
@@ -57,7 +56,8 @@
       "recurse": false,
       "replace": false,
       "merge-dev": true,
-      "merge-extra": true
+      "merge-extra": true,
+      "merge-scripts": true
     },
     "installer-paths": {
       "web/core": ["type:drupal-core"],
@@ -194,13 +194,10 @@
   },
   "require": {
     "cweagans/composer-patches": "^1.6",
-    "wikimedia/composer-merge-plugin": "^1.3",
+    "wikimedia/composer-merge-plugin": "^1.4",
     "composer/installers": "^1.2",
-    "robloach/component-installer": "^0.2",
     "derhasi/composer-preserve-paths": "^0.1",
-    "webmozart/path-util": "^2.3",
     "drupal-composer/drupal-scaffold": "^2.2",
-    "webflo/drupal-finder": "^0.2",
     "drupal/core": "^8.3.0",
     "zendframework/zend-hydrator": "~1.0"
   },
