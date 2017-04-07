@@ -6,8 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/date": "^2.10",
-    "drupal/entity_translation": "^1.0-beta6"
+    "drupal/panels_bootstrap_layouts": "^3.0"
   },
   "require-dev": {
   },
