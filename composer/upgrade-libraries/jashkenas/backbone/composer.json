@@ -1,0 +1,31 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/backbone/": ["jashkenas/backbone"]
+    }
+  },
+  "repositories": {
+    "jashkenas/backbone": {
+      "type": "package",
+      "package": {
+        "name": "jashkenas/backbone",
+        "version": "1.2.3",
+        "dist": {
+          "url": "https://github.com/jashkenas/backbone/archive/1.2.3.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "backbone"
+        }
+      }
+    }
+  },
+  "require": {
+    "jashkenas/backbone": "^1.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

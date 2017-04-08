@@ -1,41 +1,9 @@
 {
   "extra": {
     "installer-paths": {
-      "web/libraries/bootstrap/": ["twbs/bootstrap-sass"],
-      "web/libraries/fontawesome/": ["fortawesome/fontawesome"]
     }
   },
   "repositories": {
-    "twbs/bootstrap-sass": {
-      "type": "package",
-      "package": {
-        "name": "twbs/bootstrap-sass",
-        "version": "3.3.7",
-        "dist": {
-          "url": "https://github.com/twbs/bootstrap-sass/archive/v3.3.7.zip",
-          "type": "zip"
-        },
-        "type": "drupal-library",
-        "extra": {
-          "installer-name": "bootstrap"
-        }
-      }
-    },
-    "fortawesome/fontawesome": {
-      "type": "package",
-      "package": {
-        "name": "fortawesome/fontawesome",
-        "version": "4.2.0",
-        "dist": {
-          "url": "https://github.com/FortAwesome/Font-Awesome/archive/v4.2.0.zip",
-          "type": "zip"
-        },
-        "type": "drupal-library",
-        "extra": {
-          "installer-name": "fontawesome"
-        }
-      }
-    }
   },
   "require": {
     "drupal/bootstrap_library": "^1.4",

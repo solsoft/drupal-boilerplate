@@ -1,0 +1,31 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/json2/": ["douglascrockford/JSON-js"]
+    }
+  },
+  "repositories": {
+    "douglascrockford/JSON-js": {
+      "type": "package",
+      "package": {
+        "name": "douglascrockford/JSON-js",
+        "version": "1.0",
+        "dist": {
+          "url": "https://github.com/douglascrockford/JSON-js/archive/master.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "json2"
+        }
+      }
+    }
+  },
+  "require": {
+    "douglascrockford/JSON-js": "^1.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

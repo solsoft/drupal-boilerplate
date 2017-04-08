@@ -1,0 +1,31 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/jquery.imagesloaded/": ["desandro/imagesloaded"]
+    }
+  },
+  "repositories": {
+    "desandro/imagesloaded": {
+      "type": "package",
+      "package": {
+        "name": "desandro/imagesloaded",
+        "version": "2.1.2",
+        "dist": {
+          "url": "https://github.com/desandro/imagesloaded/archive/v2.1.2.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "jquery.imagesloaded"
+        }
+      }
+    }
+  },
+  "require": {
+    "desandro/imagesloaded": "^2.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

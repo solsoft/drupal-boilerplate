@@ -1,0 +1,220 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/ckeditor/plugins/lineutils/": ["ckeditor/lineutils"],
+      "assets/ckeditor/plugins/widget/": ["ckeditor/widget"],
+      "assets/ckeditor/plugins/tableresize/": ["ckeditor/tableresize"],
+      "assets/ckeditor/plugins/codesnippet/": ["ckeditor/codesnippet"],
+      "assets/ckeditor/plugins/bbcode/": ["ckeditor/bbcode"],
+      "assets/ckeditor/plugins/wordcount/": ["ckeditor/wordcount"],
+      "assets/ckeditor/plugins/base64image/": ["ckeditor/base64image"],
+      "assets/ckeditor/plugins/leaflet/": ["ckeditor/leaflet"],
+      "assets/ckeditor/plugins/leaflet/scripts/leaflet-plugins/": ["ckeditor/leaflet-plugins"],
+      "assets/ckeditor/plugins/pastebase64/": ["ckeditor/pastebase64"],
+      "assets/ckeditor/plugins/pbckcode/": ["ckeditor/pbckcode"],
+      "assets/ace/": ["ajaxorg/ace"]
+    }
+  },
+  "repositories": {
+    "ckeditor/lineutils": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/lineutils",
+        "version": "4.4.8",
+        "dist": {
+          "url": "http://download.ckeditor.com/lineutils/releases/lineutils_4.4.8.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/lineutils"
+        }
+      }
+    },
+    "ckeditor/widget": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/widget",
+        "version": "4.4.8",
+        "dist": {
+          "url": "http://download.ckeditor.com/widget/releases/widget_4.4.8.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/widget"
+        }
+      }
+    },
+    "ckeditor/tableresize": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/tableresize",
+        "version": "4.4.8",
+        "dist": {
+          "url": "http://download.ckeditor.com/tableresize/releases/tableresize_4.4.8.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/tableresize"
+        }
+      }
+    },
+    "ckeditor/codesnippet": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/codesnippet",
+        "version": "4.4.8",
+        "dist": {
+          "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.4.8.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/codesnippet"
+        }
+      }
+    },
+    "ckeditor/bbcode": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/bbcode",
+        "version": "4.4.8",
+        "dist": {
+          "url": "http://download.ckeditor.com/bbcode/releases/bbcode_4.4.8.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/bbcode"
+        }
+      }
+    },
+    "ckeditor/wordcount": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/wordcount",
+        "version": "1.12.1",
+        "dist": {
+          "url": "http://download.ckeditor.com/wordcount/releases/wordcount_1.12.1.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/wordcount"
+        }
+      }
+    },
+    "ckeditor/base64image": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/base64image",
+        "version": "1.3",
+        "dist": {
+          "url": "http://download.ckeditor.com/base64image/releases/base64image_1.3.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/base64image"
+        }
+      }
+    },
+    "ckeditor/leaflet": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/leaflet",
+        "version": "1.3.2",
+        "dist": {
+          "url": "http://download.ckeditor.com/leaflet/releases/leaflet_1.3.2.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/leaflet"
+        }
+      }
+    },
+    "ckeditor/leaflet-plugins": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/leaflet-plugins",
+        "version": "1.4.2",
+        "dist": {
+          "url": "https://github.com/shramov/leaflet-plugins/archive/1.4.2.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/leaflet/scripts/leaflet-plugins"
+        }
+      }
+    },
+    "ckeditor/pastebase64": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/pastebase64",
+        "version": "dev",
+        "source": {
+          "url": "https://github.com/ahocquet/ckeditor-pastebase64",
+          "type": "git",
+          "reference": "465babda12d7e1eaf38260de891cda5dd02fdaa0"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/pastebase64"
+        }
+      }
+    },
+    "ckeditor/pbckcode": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/pbckcode",
+        "version": "1.2.3",
+        "dist": {
+          "url": "http://download.ckeditor.com/pbckcode/releases/pbckcode_1.2.3.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ckeditor/plugins/pbckcode"
+        }
+      }
+    },
+    "ajaxorg/ace": {
+      "type": "package",
+      "package": {
+        "name": "ajaxorg/ace",
+        "version": "1.1.4",
+        "source": {
+          "url": "https://github.com/ajaxorg/ace",
+          "type": "git",
+          "reference": "tags/v1.1.4"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "ace"
+        }
+      }
+    }
+  },
+  "require": {
+    "ckeditor/lineutils": "^4.4",
+    "ckeditor/widget": "^4.4",
+    "ckeditor/tableresize": "^4.4",
+    "ckeditor/codesnippet": "^4.4",
+    "ckeditor/bbcode": "^4.4",
+    "ckeditor/wordcount": "^1.12",
+    "ckeditor/base64image": "^1.3",
+    "ckeditor/leaflet": "^1.3",
+    "ckeditor/leaflet-plugins": "^1.4",
+    "ckeditor/pastebase64": "dev",
+    "ckeditor/pbckcode": "^1.2",
+    "ajaxorg/ace": "^1.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}
