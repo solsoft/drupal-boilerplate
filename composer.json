@@ -127,6 +127,9 @@
       "mkdir -p web/modules/contrib web/modules/custom; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep",
       "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
     ],
+    "drush-deploy": [
+      "rm -f web/drush.wrapper; cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
+    ],
     "site-install": [
       "drush/drush.wrapper site-install --verbose --yes --root=../web --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
     ],
