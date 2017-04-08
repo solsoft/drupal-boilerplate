@@ -7,4 +7,5 @@ composer.lock
 
 # Ignore files deployed in vendor and web
 vendor/
+assets/
 web/

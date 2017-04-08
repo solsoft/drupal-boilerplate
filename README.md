@@ -33,9 +33,9 @@ Use `composer create-project` to deploy a new project, specifying one of the rel
 branch="8.3.x";
 composer create-project solsoft/drupal-composer-skeleton:$branch my-project --stability dev --no-interaction;
 cd my-project;
-composer deploy-examples;
 composer update;
 composer show;
+composer finish-deploy;
 composer site-install;
 composer site-run;
 ```
@@ -50,24 +50,16 @@ branch="8.x-dev";
 git clone -b $branch git@github.com:solsoft/drupal-composer-skeleton.git;
 cd drupal-composer-skeleton;
 composer install;
-composer deploy-examples;
 composer update;
 composer show;
+composer finish-deploy;
 composer site-install;
 composer site-run;
 ```
 
 ## Credits
 
-The following composer plugins were used:
-- [cweagans/composer-patches](https://github.com/cweagans/composer-patches), to allow adding patches to dependencies
-- [wikimedia/composer-merge-plugin](https://github.com/wikimedia/composer-merge-plugin), to allow merging composer.json files
-- [composer/installers](https://github.com/composer/installers), to differentiate drupal dependencies
-- [robloach/component-installer](https://github.com/RobLoach/component-installer), to support components as libraries
-- [derhasi/composer-preserve-paths](https://github.com/derhasi/composer-preserve-paths), to preserve and force paths
-- [davidbarratt/drupal-structure](https://github.com/davidbarratt/drupal-structure), to make the directory structure of Drupal 6/7 look like Drupal 8
-- [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold), to add missing files from Drupal 8 distribution
-
+See the [composer README](composer/README.md) for information about composer packers.  
 Forked from [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).
 
 Drupal Composer Skeleton  
