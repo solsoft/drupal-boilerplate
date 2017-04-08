@@ -17,6 +17,8 @@
 # Ignore other projects git repositories.
 /*/**/.git
 /vendor/**/.git
+/assets/**/.git
+/web/**/.git
 
 # Ignore build caches
 /**/.sass-cache
