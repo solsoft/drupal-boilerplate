@@ -45,13 +45,19 @@
       ],
       "include": [
         "web/core/composer.json",
+        "composer/composer.json",
+        "composer/*/composer.json",
+        "composer/*/*/composer.json",
+        "composer/*/*/*/composer.json",
         "web/profiles/custom/*/composer.json",
+        "web/profiles/custom/*/*/composer.json",
+        "web/profiles/custom/*/*/*/composer.json",
         "web/modules/custom/*/composer.json",
-        "web/modules/exports/composer.json",
-        "web/modules/exports/*/composer.json",
-        "web/modules/exports/*/*/composer.json",
-        "web/modules/exports/*/*/*/composer.json",
-        "web/themes/custom/*/composer.json"
+        "web/modules/custom/*/*/composer.json",
+        "web/modules/custom/*/*/*/composer.json",
+        "web/themes/custom/*/composer.json",
+        "web/themes/custom/*/*/composer.json",
+        "web/themes/custom/*/*/*/composer.json"
       ],
       "recurse": false,
       "replace": false,
@@ -74,7 +80,6 @@
       "web/profiles/custom",
       "web/modules/contrib",
       "web/modules/custom",
-      "web/modules/exports",
       "web/themes/contrib",
       "web/themes/custom",
       "web/libraries",
@@ -138,7 +143,7 @@
       "find web/ -type d | grep .git | xargs rm -rf",
       "find vendor/ -type d | grep .git | xargs rm -rf",
       "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
-      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep",
       "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep",
       "rm -f web/drush.wrapper; cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
     ],
@@ -147,7 +152,7 @@
       "find web/ -type d | grep .git | xargs rm -rf",
       "find vendor/ -type d | grep .git | xargs rm -rf",
       "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
-      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep",
       "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
     ],
     "post-create-project-cmd": [
@@ -161,11 +166,8 @@
     ],
     "deploy-directories": [
       "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
-      "mkdir -p web/modules/contrib web/modules/custom web/modules/exports; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep web/modules/exports/.gitkeep",
+      "mkdir -p web/modules/contrib web/modules/custom; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep",
       "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
-    ],
-    "deploy-examples": [
-      "rsync -ah examples/contrib-*/ web/modules/exports/"
     ],
     "site-install": [
       "drush/drush.wrapper site-install --verbose --yes --root=../web --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
