@@ -99,32 +99,45 @@
   "scripts": {
     "post-install-cmd": [
       "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate",
-      "find vendor/ -type d | grep .git | xargs rm -Rf",
-      "find assets/ -type d | grep .git | xargs rm -Rf",
-      "find app/ -type d | grep .git | xargs rm -Rf",
-      "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
+      "if [ -d vendor/ ]; then find vendor/ -type d | grep .git | xargs rm -Rf; fi",
+      "if [ -d assets/ ]; then find assets/ -type d | grep .git | xargs rm -Rf; fi",
+      "if [ -d app/ ]; then find app/ -type d | grep .git | xargs rm -Rf; fi"
     ],
     "post-update-cmd": [
       "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate",
-      "find vendor/ -type d | grep .git | xargs rm -Rf",
-      "find assets/ -type d | grep .git | xargs rm -Rf",
-      "find app/ -type d | grep .git | xargs rm -Rf"
+      "if [ -d vendor/ ]; then find vendor/ -type d | grep .git | xargs rm -Rf; fi",
+      "if [ -d assets/ ]; then find assets/ -type d | grep .git | xargs rm -Rf; fi",
+      "if [ -d app/ ]; then find app/ -type d | grep .git | xargs rm -Rf; fi"
     ],
     "post-create-project-cmd": [
       "mv LICENSE LICENSE.composer",
       "mv README.md README.composer.md",
-      "rm -f .gitignore; mv .gitignore.example .gitignore"
+      "rm -f .gitignore; mv .gitignore.example .gitignore",
+      "mkdir -p app/profiles/contrib app/profiles/custom/; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
+      "mkdir -p app/modules/contrib app/modules/custom/; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
+      "mkdir -p app/themes/contrib app/themes/custom/; touch app/themes/contrib/.gitkeep app/themes/custom/.gitkeep",
+      "mkdir -p assets/; touch assets/.gitkeep",
+      "if [ -d app/libraries/ ] && [ -f app/libraries/README.txt ]; then mv app/libraries/README.txt assets/README.txt; fi",
+      "if [ -d app/libraries/ ]; then rm -Rf app/libraries; else rm -f app/libraries; fi",
+      "ln -s ../assets app/libraries"
     ],
     "cleanup-project": [
-      "rm -Rf vendor/ assets/ app/ composer.lock"
+      "rm -f composer.lock",
+      "if [ -d app/ ]; then find app/ -maxdepth 1 -type f -exec rm -f {} +; fi",
+      "rm -f app/sites/example.*.php app/sites/default/default.*",
+      "rm -Rf app/core/",
+      "if [ -d app/profiles/contrib/ ]; then find app/profiles/contrib/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
+      "if [ -d app/modules/contrib/ ]; then find app/modules/contrib/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
+      "if [ -d app/themes/contrib/ ]; then find app/themes/contrib/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
+      "if [ -d assets/ ]; then find assets/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
+      "rm -Rf vendor/"
     ],
-    "finish-deploy": [
-      "if [ -f app/libraries/README.txt ] && [ -d app/libraries ]; then mv app/libraries/README.txt assets/README.txt; fi",
-      "if [ -d app/libraries ]; then rm -Rf app/libraries; else rm -f app/libraries; fi",
-      "ln -s ../assets app/libraries",
-      "mkdir -p app/profiles/contrib app/profiles/custom; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
-      "mkdir -p app/modules/contrib app/modules/custom; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
-      "mkdir -p app/themes/contrib app/themes/custom; touch app/themes/contrib/.gitkeep app/themes/custom/.gitkeep"
+    "examples-deploy": [
+      "cp -R composer.examples/7.x/* composer/"
+    ],
+    "examples-undeploy": [
+      "rm -f composer/composer.json",
+      "rm -Rf composer/upgrade-* composer/contrib-*"
     ],
     "drush-deploy": [
       "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
