@@ -11,7 +11,7 @@ A few packages are used to expand composer's functionality:
 
 ## Dependencies
 The dependences and managed and organized into different directories:
-- web: Drupal core, profiles, modules and themes
+- app: Drupal core, profiles, modules and themes
 - assets: External JavaScript, CSS and other kinds of assets (Drupal Libraries)
 - vendor: Composer packages and remaining dependencies
 
@@ -38,17 +38,16 @@ Drupal Contributed modules and themes, as well as external assets/libraries:
 
 ### Drupal Custom directories
 Additional files can be included for custom Drupal profiles, modules and themes:
-- web/profiles/custom/*/composer.json
-- web/profiles/custom/*/*/composer.json
-- web/profiles/custom/*/*/*/composer.json
-- web/modules/custom/*/composer.json
-- web/modules/custom/*/*/composer.json
-- web/modules/custom/*/*/*/composer.json
-- web/themes/custom/*/composer.json
-- web/themes/custom/*/*/composer.json
-- web/themes/custom/*/*/*/composer.json
+- app/profiles/custom/*/composer.json
+- app/profiles/custom/*/*/composer.json
+- app/profiles/custom/*/*/*/composer.json
+- app/modules/custom/*/composer.json
+- app/modules/custom/*/*/composer.json
+- app/modules/custom/*/*/*/composer.json
+- app/themes/custom/*/composer.json
+- app/themes/custom/*/*/composer.json
+- app/themes/custom/*/*/*/composer.json
 
 ### Drupal Core
 The Core configuration is loaded to provide dependencies for development:
-- web/core/composer.json
-
+- app/core/composer.json

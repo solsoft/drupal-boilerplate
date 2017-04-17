@@ -8,7 +8,7 @@ composer.phar
 # Ignore other projects git repositories
 /vendor/**/.git
 /assets/**/.git
-/web/**/.git
+/app/**/.git
 
 # Ignore build caches
 /**/.sass-cache
