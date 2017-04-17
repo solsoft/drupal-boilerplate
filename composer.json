@@ -44,20 +44,20 @@
         "composer.local.json"
       ],
       "include": [
-        "web/core/composer.json",
+        "app/core/composer.json",
         "composer/composer.json",
         "composer/*/composer.json",
         "composer/*/*/composer.json",
         "composer/*/*/*/composer.json",
-        "web/profiles/custom/*/composer.json",
-        "web/profiles/custom/*/*/composer.json",
-        "web/profiles/custom/*/*/*/composer.json",
-        "web/modules/custom/*/composer.json",
-        "web/modules/custom/*/*/composer.json",
-        "web/modules/custom/*/*/*/composer.json",
-        "web/themes/custom/*/composer.json",
-        "web/themes/custom/*/*/composer.json",
-        "web/themes/custom/*/*/*/composer.json"
+        "app/profiles/custom/*/composer.json",
+        "app/profiles/custom/*/*/composer.json",
+        "app/profiles/custom/*/*/*/composer.json",
+        "app/modules/custom/*/composer.json",
+        "app/modules/custom/*/*/composer.json",
+        "app/modules/custom/*/*/*/composer.json",
+        "app/themes/custom/*/composer.json",
+        "app/themes/custom/*/*/composer.json",
+        "app/themes/custom/*/*/*/composer.json"
       ],
       "recurse": false,
       "replace": false,
@@ -66,30 +66,30 @@
       "merge-scripts": true
     },
     "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+      "app/core": ["type:drupal-core"],
+      "app/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "app/modules/contrib/{$name}": ["type:drupal-module"],
+      "app/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "app/themes/contrib/{$name}": ["type:drupal-theme"],
+      "app/themes/custom/{$name}": ["type:drupal-custom-theme"],
       "assets/{$name}": ["type:drupal-library"],
       "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "preserve-paths": [
-      "web/profiles/contrib",
-      "web/profiles/custom",
-      "web/modules/contrib",
-      "web/modules/custom",
-      "web/themes/contrib",
-      "web/themes/custom",
-      "web/libraries",
-      "web/sites/*/*settings*.php",
-      "web/sites/*/*services*.yml",
-      "web/sites/*/files",
-      "web/sites/*/public",
-      "web/sites/*/private",
-      "web/sites/*/files-public",
-      "web/sites/*/files-private",
+      "app/profiles/contrib",
+      "app/profiles/custom",
+      "app/modules/contrib",
+      "app/modules/custom",
+      "app/themes/contrib",
+      "app/themes/custom",
+      "app/libraries",
+      "app/sites/*/*settings*.php",
+      "app/sites/*/*services*.yml",
+      "app/sites/*/files",
+      "app/sites/*/public",
+      "app/sites/*/private",
+      "app/sites/*/files-public",
+      "app/sites/*/files-private",
       "assets",
       "drush/contrib"
     ],
@@ -143,40 +143,39 @@
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
       "find vendor/ -type d | grep .git | xargs rm -Rf",
       "find assets/ -type d | grep .git | xargs rm -Rf",
-      "find web/ -type d | grep .git | xargs rm -Rf",
-      "rm -f web/drush.wrapper; cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
+      "find app/ -type d | grep .git | xargs rm -Rf",
+      "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
     ],
     "post-update-cmd": [
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
       "find vendor/ -type d | grep .git | xargs rm -Rf",
       "find assets/ -type d | grep .git | xargs rm -Rf",
-      "find web/ -type d | grep .git | xargs rm -Rf"
+      "find app/ -type d | grep .git | xargs rm -Rf"
     ],
     "post-create-project-cmd": [
-      "rm -f .gitignore",
       "mv LICENSE LICENSE.composer",
       "mv README.md README.composer.md",
-      "mv .gitignore.example .gitignore"
+      "rm -f .gitignore; mv .gitignore.example .gitignore"
     ],
     "cleanup-project": [
-      "rm -Rf web/ assets/ vendor/ composer.lock"
+      "rm -Rf vendor/ assets/ app/ composer.lock"
     ],
     "finish-deploy": [
-      "if [ -f web/libraries/README.txt ] && [ -d web/libraries ]; then mv web/libraries/README.txt assets/README.txt; fi",
-      "if [ -d web/libraries ]; then rm -Rf web/libraries; else rm -f web/libraries; fi",
-      "ln -s ../assets web/libraries",
-      "mkdir -p web/profiles/contrib web/profiles/custom; touch web/profiles/contrib/.gitkeep web/profiles/custom/.gitkeep",
-      "mkdir -p web/modules/contrib web/modules/custom; touch web/modules/contrib/.gitkeep web/modules/custom/.gitkeep",
-      "mkdir -p web/themes/contrib web/themes/custom; touch web/themes/contrib/.gitkeep web/themes/custom/.gitkeep"
+      "if [ -f app/libraries/README.txt ] && [ -d app/libraries ]; then mv app/libraries/README.txt assets/README.txt; fi",
+      "if [ -d app/libraries ]; then rm -Rf app/libraries; else rm -f app/libraries; fi",
+      "ln -s ../assets app/libraries",
+      "mkdir -p app/profiles/contrib app/profiles/custom; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
+      "mkdir -p app/modules/contrib app/modules/custom; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
+      "mkdir -p app/themes/contrib app/themes/custom; touch app/themes/contrib/.gitkeep app/themes/custom/.gitkeep"
     ],
     "drush-deploy": [
-      "rm -f web/drush.wrapper; cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
+      "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
     ],
     "site-install": [
-      "drush/drush.wrapper site-install --verbose --yes --root=../web --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
+      "drush/drush.wrapper site-install --verbose --yes --root=../app --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
     ],
     "site-run": [
-      "drush/drush.wrapper runserver --root=../web --uri=127.0.0.1:8080 http://127.0.0.1:8080"
+      "drush/drush.wrapper runserver --root=../app --uri=127.0.0.1:8080 http://127.0.0.1:8080"
     ]
   },
   "autoload": {
@@ -184,7 +183,7 @@
       "scripts/composer/ScriptHandler.php"
     ],
     "psr-4": {
-      "Drupal\\Core\\Composer\\": "web/core/lib/Drupal/Core/Composer"
+      "Drupal\\Core\\Composer\\": "app/core/lib/Drupal/Core/Composer"
     }
   },
   "repositories": {
