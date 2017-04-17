@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/group": "^1.0-beta5"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

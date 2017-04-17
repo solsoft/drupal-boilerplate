@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/token": "^1.0-rc1",
+    "drupal/diff": "^1.0-rc1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

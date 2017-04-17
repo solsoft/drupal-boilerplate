@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+  },
+  "require-dev": {
+    "drupal/embed": "^1.0"
+  },
+  "require-disabled": {
+  }
+}

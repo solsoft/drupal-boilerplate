@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/zen": "^7.0-alpha14"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

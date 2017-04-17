@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/shortcutperrole": "^1.0-rc1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

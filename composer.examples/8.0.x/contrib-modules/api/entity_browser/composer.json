@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+  },
+  "require-dev": {
+    "drupal/entity_browser": "^1.0-rc2",
+    "drupal/content_browser": "^1.0-alpha4",
+    "drupal/file_browser": "^1.0-alpha4",
+    "drupal/media_entity_browser": "^1.0-beta3"
+  },
+  "require-disabled": {
+  }
+}

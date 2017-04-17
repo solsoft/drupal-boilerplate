@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/taxonomy_access_fix": "^2.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

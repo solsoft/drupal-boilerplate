@@ -1,0 +1,31 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/fontawesome/": ["fortawesome/fontawesome"]
+    }
+  },
+  "repositories": {
+    "fortawesome/fontawesome": {
+      "type": "package",
+      "package": {
+        "name": "fortawesome/fontawesome",
+        "version": "4.2.0",
+        "dist": {
+          "url": "https://github.com/FortAwesome/Font-Awesome/archive/v4.2.0.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "fontawesome"
+        }
+      }
+    }
+  },
+  "require": {
+    "fortawesome/fontawesome": "^4.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

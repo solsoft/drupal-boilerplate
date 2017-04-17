@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/focal_point": "^1.0-beta4"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

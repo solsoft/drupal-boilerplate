@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+    "drupal/image_effects": "^1.0-beta1"
+  }
+}

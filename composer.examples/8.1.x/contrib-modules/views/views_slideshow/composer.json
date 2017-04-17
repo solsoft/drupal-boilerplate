@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/views_slideshow": "^4.4",
+    "malsup/jquery-cycle": "^3.0",
+    "briancherne/jquery-hoverIntent": "^1.8",
+    "douglascrockford/JSON-js": "^1.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

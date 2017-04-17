@@ -1,0 +1,18 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/bootstrap_library": "^1.8",
+    "drupal/fontawesome": "^1.2",
+    "twbs/bootstrap-sass": "^3.3",
+    "fortawesome/fontawesome": "^4.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

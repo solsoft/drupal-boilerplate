@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/eu_cookie_compliance": "^1.0-beta7"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

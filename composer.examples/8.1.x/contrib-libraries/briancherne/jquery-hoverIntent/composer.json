@@ -1,0 +1,31 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/jquery.hoverintent/": ["briancherne/jquery-hoverIntent"]
+    }
+  },
+  "repositories": {
+    "briancherne/jquery-hoverIntent": {
+      "type": "package",
+      "package": {
+        "name": "briancherne/jquery-hoverIntent",
+        "version": "1.8.2",
+        "dist": {
+          "url": "https://github.com/briancherne/jquery-hoverIntent/archive/2790012922c1e4d1aee555a2ed9ead77b3c662cf.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "jquery.hoverintent"
+        }
+      }
+    }
+  },
+  "require": {
+    "briancherne/jquery-hoverIntent": "^1.8"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/webform": "5.0-beta9",
+    "drupal/contact_storage": "^1.0-beta8"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

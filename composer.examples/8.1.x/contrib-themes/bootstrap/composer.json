@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/bootstrap": "^3.2",
+    "drupal/bootstrap_layouts": "^4.1"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

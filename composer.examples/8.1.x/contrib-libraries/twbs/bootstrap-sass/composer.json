@@ -1,0 +1,31 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/bootstrap/": ["twbs/bootstrap-sass"]
+    }
+  },
+  "repositories": {
+    "twbs/bootstrap-sass": {
+      "type": "package",
+      "package": {
+        "name": "twbs/bootstrap-sass",
+        "version": "3.3.7",
+        "dist": {
+          "url": "https://github.com/twbs/bootstrap-sass/archive/v3.3.7.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "bootstrap"
+        }
+      }
+    }
+  },
+  "require": {
+    "twbs/bootstrap-sass": "^3.3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

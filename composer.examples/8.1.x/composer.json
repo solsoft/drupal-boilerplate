@@ -1,0 +1,44 @@
+{
+  "extra": {
+    "drupal-scaffold": {
+      "source": "http://cgit.drupalcode.org/drupal/plain/{path}?h={version}",
+      "excludes": [
+        "autoload.php",
+        "vendor",
+        "composer.json",
+        "composer.lock"
+      ],
+      "includes": [
+        "example.gitignore",
+        ".gitattributes",
+        ".editorconfig",
+        ".csslintrc",
+        ".eslintignore",
+        ".eslintrc",
+        ".htaccess",
+        "web.config",
+        "robots.txt",
+        "README.txt",
+        "index.php",
+        "update.php",
+        "profiles/README.txt",
+        "modules/README.txt",
+        "themes/README.txt",
+        "sites/README.txt",
+        "sites/example.sites.php",
+        "sites/example.settings.local.php",
+        "sites/default/default.settings.php",
+        "sites/default/default.services.yml",
+        "sites/development.services.yml"
+      ],
+      "initial": {
+        "sites/default/default.settings.php": "sites/default/settings.php",
+        "sites/default/default.services.yml": "sites/default/services.yml"
+      },
+      "omit-defaults": false
+    }
+  },
+  "require": {
+    "drupal/core": "^8.1.0, <8.2.0"
+  }
+}
