@@ -5,7 +5,7 @@
 composer.phar
 composer.lock
 
-# Ignore files deployed in vendor and web
+# Ignore files deployed in vendor, assets and web
 vendor/
 assets/
 web/
