@@ -1,0 +1,7 @@
+{
+  "extra": {
+  },
+  "require": {
+    "drupal/drupal": "7.*@stable"
+  }
+}
