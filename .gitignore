@@ -1,4 +1,4 @@
-# These .gitignore rules are for developing the skeleton only.
+# These .gitignore rules are for developing the boilerplate.
 # You should use the rules provided in .gitignore.example for projects.
 
 # Ignore composer binary and lock file
