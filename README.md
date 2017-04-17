@@ -25,7 +25,6 @@ Drupal 7.x is being deployed with a Drupal 8 look alike directory structure, usi
 - 7.x-dev - development branch for latest Drupal 7.x
 
 ## Usage
-
 Before starting, consult the Composer reference for standard usage instructions.  
 Use `composer create-project` to deploy a new project, specifying one of the release branches.
 
@@ -35,13 +34,11 @@ composer create-project solsoft/drupal-boilerplate:$branch my-project --stabilit
 cd my-project;
 composer update;
 composer show;
-composer finish-deploy;
 composer site-install;
 composer site-run;
 ```
 
 ## Contributing
-
 Clone the git repository pointing to one of the development branches.  
 Merge requests should be submitted against these branches.
 
@@ -52,13 +49,19 @@ cd drupal-boilerplate;
 composer install;
 composer update;
 composer show;
-composer finish-deploy;
 composer site-install;
 composer site-run;
 ```
 
-## Credits
+### Extras
+Optionally you may run `composer examples-deploy` to install example Drupal
+Contributed libraries, modules and themes example dependencies. See more
+information about this in the `composer.examples` directory.  
+Drush can be deployed locally by running `composer drush-deploy`.  
+The project can be reset by running `composer cleanup-project` to delete
+the `vendor/`, `assets/` and `app/` directories and the `composer.lock` file.
 
+## Credits
 See the [composer README](composer/README.md) for information about composer packages.  
 Inspiration taken from [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).
 
