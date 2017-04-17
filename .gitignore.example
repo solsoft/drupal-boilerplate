@@ -1,23 +1,11 @@
-# Ignore configuration files that may contain sensitive information.
-/*/sites/*/*settings*.php
-/*/sites/*/*services*.yml
-!/*/sites/*/default.settings.php
-!/*/sites/*/default.services.yml
+# See documentation for gitignore at https://git-scm.com/docs/gitignore or man(5).
+# A global gitignore file should be created to ignore typical temporary files.
+# Use the tool gi at https://www.gitignore.io to provide this.
 
-# Ignore paths that contain user-generated content.
-/*/sites/*/files
-/*/sites/*/public
-/*/sites/*/private
-/*/sites/*/files-public
-/*/sites/*/files-private
+# Ignore composer binary
+composer.phar
 
-# Ignore paths that contain temporary files.
-/*/sites/*/translations
-/*/sites/*/tmp
-/*/sites/*/cache
-
-# Ignore other projects git repositories.
-/*/**/.git
+# Ignore other projects git repositories
 /vendor/**/.git
 /assets/**/.git
 /web/**/.git
@@ -25,38 +13,20 @@
 # Ignore build caches
 /**/.sass-cache
 
-# Editor and IDE files
-*.un~
-*.kate-swp
-.project
-.buildpath
-.settings*
-.idea
+# Ignore configuration files that may contain sensitive information
+/*/sites/*/*settings*.php
+/*/sites/*/*services*.yml
+!/*/sites/*/default.settings.php
+!/*/sites/*/default.services.yml
 
-# OS generated files
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-._*
+# Ignore paths that may contain user-generated content
+/*/sites/*/files
+/*/sites/*/public
+/*/sites/*/private
+/*/sites/*/files-public
+/*/sites/*/files-private
 
-# Archives and binaries
-*.tar
-*.gz
-*.bz2
-*.7z
-*.xz
-*.zip
-*.rar
-*.tgz
-*.iso
-*.jar
-*.dmg
-*.exe
-*.so
-*.dll
-
-# Logs and databases
-*.log
-*.sql
-
+# Ignore paths that may contain temporary files
+/*/sites/*/translations
+/*/sites/*/tmp
+/*/sites/*/cache
