@@ -1,13 +1,13 @@
 {
-  "name": "solsoft/drupal-composer-skeleton",
-  "description": "Drupal Composer Skeleton",
-  "keywords": [ "drupal", "composer", "skeleton" ],
+  "name": "solsoft/drupal-boilerplate",
+  "description": "Boilerplate for deploying new Drupal projects",
+  "keywords": [ "drupal", "boilerplate", "composer" ],
   "homepage": "http://sol-soft.org/",
   "support": {
-    "source": "https://github.com/solsoft/drupal-composer-skeleton",
-    "docs": "https://github.com/solsoft/drupal-composer-skeleton/wiki",
-    "wiki": "https://github.com/solsoft/drupal-composer-skeleton/wiki",
-    "issues": "https://github.com/solsoft/drupal-composer-skeleton/issues",
+    "source": "https://github.com/solsoft/drupal-boilerplate",
+    "docs": "https://github.com/solsoft/drupal-boilerplate/wiki",
+    "wiki": "https://github.com/solsoft/drupal-boilerplate/wiki",
+    "issues": "https://github.com/solsoft/drupal-boilerplate/issues",
     "email": "info@sol-soft.org"
   },
   "type": "project",
@@ -27,9 +27,9 @@
   "config": {
     "vendor-dir": "vendor",
     "preferred-install": "dist",
-    "autoloader-suffix": "Drupal8",
     "secure-http": false,
-    "github-protocols": [ "https", "git", "ssh" ]
+    "github-protocols": [ "https", "git", "ssh" ],
+    "autoloader-suffix": "Drupal8"
   },
   "extra": {
     "_readme": [

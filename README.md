@@ -1,7 +1,7 @@
-# drupal-composer-skeleton
-Composer skeleton for deploying new Drupal projects. Based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).  
-Using [Drupal](https://drupal.org/), [Composer](https://getcomposer.org/) and associated plugins, and the official [packages.drupal.org](http://drupal-composer.org/) repository.  
-Packages are published and updated regularly at [Packagist](https://packagist.org/packages/solsoft/drupal-composer-skeleton).  
+# drupal-boilerplate
+Boilerplate for deploying new [Drupal](https://drupal.org/) projects. Based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).  
+Using [Composer](https://getcomposer.org/) and associated plugins, and the official [packages.drupal.org](http://drupal-composer.org/) repository.  
+Packages are published and updated regularly at [Packagist](https://packagist.org/packages/solsoft/drupal-boilerplate).  
 Examples are provided for a series of modules and themes and are included in the `composer create-project` process.
 
 ## Drupal versions supported
@@ -31,7 +31,7 @@ Use `composer create-project` to deploy a new project, specifying one of the rel
 
 ```
 branch="8.3.x";
-composer create-project solsoft/drupal-composer-skeleton:$branch my-project --stability dev --no-interaction;
+composer create-project solsoft/drupal-boilerplate:$branch my-project --stability dev --no-interaction;
 cd my-project;
 composer update;
 composer show;
@@ -47,8 +47,8 @@ Merge requests should be submitted against these branches.
 
 ```
 branch="8.x-dev";
-git clone -b $branch git@github.com:solsoft/drupal-composer-skeleton.git;
-cd drupal-composer-skeleton;
+git clone -b $branch git@github.com:solsoft/drupal-boilerplate.git;
+cd drupal-boilerplate;
 composer install;
 composer update;
 composer show;
@@ -59,11 +59,11 @@ composer site-run;
 
 ## Credits
 
-See the [composer README](composer/README.md) for information about composer packers.  
-Forked from [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).
+See the [composer README](composer/README.md) for information about composer packages.  
+Inspiration taken from [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).
 
-Drupal Composer Skeleton  
-Copyright (C) 2016 SOL-Soft  
+Drupal Boilerplate  
+Copyright (C) 2016-2017 SOL-Soft  
 Luís Pedro Algarvio
 
 This program is free software: you can redistribute it and/or modify
