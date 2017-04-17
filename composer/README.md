@@ -28,9 +28,15 @@ Custom configuration and dependencies may be loaded from:
 Patches are set to be loaded from:
 - composer.patches.json
 
+### Composer.examples directory
+The `composer/` directory contains files that add additional dependencies as
+Drupal Contributed modules and themes, as well as external assets/libraries.  
+These are not by default read by composer and must be copied to the `composer`
+directory for inclusion in the project deployment.
+
 ### Composer directory
-The `composer/` directory contains files to add additional dependencies as 
-Drupal Contributed modules and themes, as well as external assets/libraries:
+The `composer/` directory may contain files to add additional dependencies.  
+Composer will look for files under these paths:
 - composer/composer.json
 - composer/*/composer.json
 - composer/*/*/composer.json
