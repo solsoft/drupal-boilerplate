@@ -6,8 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/restui": "^1.12",
-    "drupal/services": "^4.0-beta3"
+    "drupal/externalauth": "^1.0",
+    "drupal/simplesamlphp_auth": "^3.0-rc2"
   },
   "require-dev": {
   },

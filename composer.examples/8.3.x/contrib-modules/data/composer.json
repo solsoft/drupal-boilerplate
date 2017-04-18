@@ -6,6 +6,7 @@
   "repositories": {
   },
   "require": {
+    "drupal/restui": "^1.13",
     "drupal/services": "^4.0-beta3"
   },
   "require-dev": {

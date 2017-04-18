@@ -6,8 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/restui": "^1.12",
-    "drupal/services": "^4.0-beta3"
+    "simplesamlphp/simplesamlphp": "^1.14.12"
   },
   "require-dev": {
   },
