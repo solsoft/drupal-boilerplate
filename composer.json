@@ -141,10 +141,10 @@
       "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
     ],
     "site-install": [
-      "drush/drush.wrapper site-install --verbose --yes --root=../app --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
+      "drush/drush.wrapper site-install --verbose --yes --root=../app/core --uri=127.0.0.1:8080 --db-url=sqlite://tmp/site.sqlite"
     ],
     "site-run": [
-      "drush/drush.wrapper runserver --root=../app --uri=127.0.0.1:8080 http://127.0.0.1:8080"
+      "drush/drush.wrapper runserver --root=../app/core --uri=127.0.0.1:8080 http://127.0.0.1:8080"
     ]
   },
   "autoload": {
