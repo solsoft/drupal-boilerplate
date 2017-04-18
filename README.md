@@ -5,32 +5,21 @@ Packages are published and updated regularly at [Packagist](https://packagist.or
 Examples are provided for a series of modules and themes and are included in the `composer create-project` process.
 
 ## Drupal versions supported
-- Drupal 8.3.x
-- Drupal 8.2.x
-- Drupal 8.1.x
-- Drupal 8.0.x
+- Drupal 8.0.x - 8.3.x
 - Drupal 7.x
 
 Drupal 7.x is being deployed with a Drupal 8 look alike directory structure, using [davidbarratt/drupal-structure](https://github.com/davidbarratt/drupal-structure).
 
-## Release branches
-- 8.3.x   - releases branch for Drupal 8.3.x
-- 8.2.x   - releases branch for Drupal 8.2.x
-- 8.1.x   - releases branch for Drupal 8.1.x
-- 8.0.x   - releases branch for Drupal 8.0.x
-- 7.x     - releases branch for Drupal 7.x
-
 ## Development branches
-- 8.x-dev - development branch for latest Drupal 8.x
-- 7.x-dev - development branch for latest Drupal 7.x
+- 8.x - development branch for the latest Drupal 8.3.x
+- 7.x - development branch for the latest Drupal 7.x
 
 ## Usage
 Before starting, consult the Composer reference for standard usage instructions.  
-Use `composer create-project` to deploy a new project, specifying one of the release branches.
+Use `composer create-project` to deploy a new project, specifying one branch.
 
 ```
-branch="8.3.x";
-composer create-project solsoft/drupal-boilerplate:$branch my-project --stability dev --no-interaction;
+composer create-project solsoft/drupal-boilerplate:8.x-dev my-project --stability dev --no-interaction;
 cd my-project;
 composer update;
 composer show;
@@ -43,8 +32,7 @@ Clone the git repository pointing to one of the development branches.
 Merge requests should be submitted against these branches.
 
 ```
-branch="8.x-dev";
-git clone -b $branch git@github.com:solsoft/drupal-boilerplate.git;
+git clone -b 8.x git@github.com:solsoft/drupal-boilerplate.git;
 cd drupal-boilerplate;
 composer install;
 composer update;
