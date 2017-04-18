@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/cas": "^1.5",
+    "drupal/cas_attributes": "^1.0-rc3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

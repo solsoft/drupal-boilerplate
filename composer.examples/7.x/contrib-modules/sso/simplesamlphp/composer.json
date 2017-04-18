@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/simplesamlphp_auth": "^2.0-alpha2",
+    "drupal/drupalauth4ssp": "^1.0-beta5"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

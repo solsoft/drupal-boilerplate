@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "simplesamlphp/simplesamlphp": "^1.14.12"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

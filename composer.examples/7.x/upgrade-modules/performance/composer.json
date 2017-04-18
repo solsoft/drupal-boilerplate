@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/CacheTags": "^1.0",
+    "drupal/d8cache": "^1.0-beta1",
     "drupal/entity_modified": "^1.2",
     "drupal/entitycache": "^1.5",
     "drupal/render_cache": "^1.0",
