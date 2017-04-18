@@ -37,11 +37,7 @@
       "By default Drupal loads the autoloader from ./vendor/autoload.php.",
       "To change the autoloader you can edit ./autoload.php."
     ],
-    "patches-file": "composer.patches.json",
     "merge-plugin": {
-      "require": [
-        "composer.local.json"
-      ],
       "include": [
         "app/core/composer.json",
         "composer/composer.json",
@@ -56,7 +52,8 @@
         "app/modules/custom/*/*/*/composer.json",
         "app/themes/custom/*/composer.json",
         "app/themes/custom/*/*/composer.json",
-        "app/themes/custom/*/*/*/composer.json"
+        "app/themes/custom/*/*/*/composer.json",
+        "composer/composer.local.json"
       ],
       "recurse": false,
       "replace": false,
@@ -113,6 +110,7 @@
       "mv LICENSE LICENSE.composer",
       "mv README.md README.composer.md",
       "rm -f .gitignore; mv .gitignore.example .gitignore",
+      "mv composer/composer.local.example.json composer/composer.local.json",
       "mkdir -p app/profiles/contrib app/profiles/custom/; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
       "mkdir -p app/modules/contrib app/modules/custom/; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
       "mkdir -p app/themes/contrib app/themes/custom/; touch app/themes/contrib/.gitkeep app/themes/custom/.gitkeep",
