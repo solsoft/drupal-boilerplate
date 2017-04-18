@@ -1,5 +1,7 @@
 {
   "extra": {
+    "patches": {
+    },
     "installer-paths": {
     }
   },

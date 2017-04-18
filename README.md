@@ -55,7 +55,8 @@ composer site-run;
 
 ### Extras
 Optionally you may run `composer examples-deploy` to install example Drupal
-Contributed libraries, modules and themes example dependencies. See more
+Contributed libraries, modules and themes example dependencies. These can
+also be undeployed by running `composer examples-undeploy`. See more
 information about this in the `composer.examples` directory.  
 Drush can be deployed locally by running `composer drush-deploy`.  
 The project can be reset by running `composer cleanup-project` to delete

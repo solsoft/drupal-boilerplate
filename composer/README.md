@@ -23,10 +23,7 @@ The main file is loaded with the minimum set of configuration and dependencies:
 - composer.json
 
 Custom configuration and dependencies may be loaded from:
-- composer.local.json
-
-Patches are set to be loaded from:
-- composer.patches.json
+- composer/composer.local.json
 
 ### Composer.examples directory
 The `composer/` directory contains files that add additional dependencies as
