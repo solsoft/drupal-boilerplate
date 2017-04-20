@@ -6,12 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/jquery_update": "^2.7",
-    "drupal/modernizr": "^3.9",
-    "drupal/underscore": "^2.1",
-    "modernizr/modernizr": "^2.8",
-    "jashkenas/underscore": "^1.8",
-    "jashkenas/backbone": "^1.2"
+    "drupal/libraries": "^2.3"
   },
   "require-dev": {
   },

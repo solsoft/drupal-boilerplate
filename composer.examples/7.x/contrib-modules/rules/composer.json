@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/rules": "^2.9",
+    "drupal/rules": "^2.10",
     "drupal/rules_conditional": "^1.0-beta2",
     "drupal/entity_rules": "^1.0-alpha4",
     "drupal/views_rules": "^1.0",

@@ -6,6 +6,7 @@
   "repositories": {
   },
   "require": {
+    "drupal/views": "^3.15",
     "drupal/views_bulk_operations": "^3.4",
     "drupal/views_cache_bully": "^3.1",
     "drupal/views_content_cache": "^3.0-alpha3",

@@ -6,9 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/ctools": "^1.12",
-    "drupal/entity": "^1.0",
-    "drupal/uuid": "^1.0-beta2"
+    "drupal/fontawesome": "^2.6",
+    "fortawesome/fontawesome": "^4.2"
   },
   "require-dev": {
   },

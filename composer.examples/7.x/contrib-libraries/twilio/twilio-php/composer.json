@@ -1,28 +1,28 @@
 {
   "extra": {
     "installer-paths": {
-      "assets/colorbox/": ["jackmoore/colorbox"]
+      "assets/twilio/": ["twilio/twilio-php"]
     }
   },
   "repositories": {
-    "jackmoore/colorbox": {
+    "twilio/twilio-php": {
       "type": "package",
       "package": {
-        "name": "jackmoore/colorbox",
-        "version": "1.6.4",
+        "name": "twilio/twilio-php",
+        "version": "5.7.3",
         "dist": {
-          "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+          "url": "https://github.com/twilio/twilio-php/archive/5.7.3.zip",
           "type": "zip"
         },
         "type": "drupal-library",
         "extra": {
-          "installer-name": "colorbox"
+          "installer-name": "twilio"
         }
       }
     }
   },
   "require": {
-    "jackmoore/colorbox": "^1.6.4"
+    "twilio/twilio-php": "^5.7.3"
   },
   "require-dev": {
   },

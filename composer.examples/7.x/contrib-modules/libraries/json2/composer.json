@@ -6,9 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/ctools": "^1.12",
-    "drupal/entity": "^1.0",
-    "drupal/uuid": "^1.0-beta2"
+    "drupal/json2": "^1.1",
+    "douglascrockford/JSON-js": "^1.0"
   },
   "require-dev": {
   },

@@ -9,6 +9,7 @@
     "drupal/ckeditor_filter": "^1.2",
     "drupal/ckeditor_link": "^2.4",
     "drupal/ckeditor_widgets": "^1.0-alpha3",
+    "drupal/layouter": "^1.10",
     "drupal/media_ckeditor": "^2.0-rc3",
     "drupal/entity_embed": "^2.0-alpha3",
     "ckeditor/lineutils": "^4.4",

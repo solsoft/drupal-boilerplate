@@ -6,9 +6,9 @@
   "repositories": {
   },
   "require": {
-    "drupal/ctools": "^1.12",
-    "drupal/entity": "^1.0",
-    "drupal/uuid": "^1.0-beta2"
+    "drupal/tfa": "^2.0",
+    "drupal/tfa_basic": "^1.0",
+    "twilio/twilio-php": "^5.7.3"
   },
   "require-dev": {
   },

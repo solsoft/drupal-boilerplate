@@ -7,6 +7,7 @@
   },
   "require": {
     "drupal/composer_autoloader": "^1.1",
+    "drupal/xautoload": "^5.7",
     "drupal/basic_auth": "^1.2"
   },
   "require-dev": {

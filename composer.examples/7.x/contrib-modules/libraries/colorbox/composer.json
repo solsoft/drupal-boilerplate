@@ -7,7 +7,7 @@
   },
   "require": {
     "drupal/colorbox": "^2.12",
-    "jackmoore/colorbox": "~1.4"
+    "jackmoore/colorbox": "^1.6.4"
   },
   "require-dev": {
   },

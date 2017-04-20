@@ -6,16 +6,9 @@
   "repositories": {
   },
   "require": {
-    "drupal/services": "^3.19",
-    "drupal/services_contact": "^1.2",
-    "drupal/services_search": "^3.0",
-    "drupal/services_views": "^1.1",
-    "drupal/clients": "^3.1"
   },
   "require-dev": {
   },
   "require-disabled": {
-    "drupal/services_client": "^1.0-beta1",
-    "drupal/services_entity": "^2.0-alpha8"
   }
 }

@@ -6,10 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/bootstrap_library": "^1.4",
-    "drupal/fontawesome": "^2.6",
-    "twbs/bootstrap-sass": "^3.3",
-    "fortawesome/fontawesome": "^4.2"
+    "drupal/icon": "^1.0"
   },
   "require-dev": {
   },
