@@ -214,9 +214,9 @@
     "oomphinc/composer-installers-extender": "^1.1",
     "mnsami/composer-custom-directory-installer": "^1.1",
     "derhasi/composer-preserve-paths": "^0.1",
+    "webflo/drupal-finder": "^0.2.1",
     "drupal-composer/drupal-scaffold": "^2.2",
-    "drupal/core": "^8.3.0",
-    "zendframework/zend-hydrator": "~1.0"
+    "drupal/core": "^8.3.0"
   },
   "require-dev": {
     "drush/drush": "^8.1",

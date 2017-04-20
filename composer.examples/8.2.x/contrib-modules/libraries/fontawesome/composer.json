@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/fontawesome": "^1.2",
+    "fortawesome/fontawesome": "^4.2"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

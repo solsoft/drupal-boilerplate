@@ -9,9 +9,9 @@
       "type": "package",
       "package": {
         "name": "jackmoore/colorbox",
-        "version": "1.4.37",
+        "version": "1.6.4",
         "dist": {
-          "url": "https://github.com/jackmoore/colorbox/archive/1.4.37.zip",
+          "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
           "type": "zip"
         },
         "type": "drupal-library",
@@ -22,7 +22,7 @@
     }
   },
   "require": {
-    "jackmoore/colorbox": "~1.4"
+    "jackmoore/colorbox": "^1.6.4"
   },
   "require-dev": {
   },

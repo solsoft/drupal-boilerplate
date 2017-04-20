@@ -6,7 +6,8 @@
   "repositories": {
   },
   "require": {
-    "drupal/paragraphs": "^1.1"
+    "drupal/paragraphs": "^1.1",
+    "drupal/classy_paragraphs": "^1.0-beta1"
   },
   "require-dev": {
   },

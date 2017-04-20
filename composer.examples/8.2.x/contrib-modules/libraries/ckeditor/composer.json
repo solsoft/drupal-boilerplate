@@ -1,0 +1,15 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/layouter": "^1.10"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

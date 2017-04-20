@@ -8,7 +8,7 @@
   "require": {
   },
   "require-dev": {
-    "drupal/entity_browser": "^1.0-rc2",
+    "drupal/entity_browser": "^1.0",
     "drupal/content_browser": "^1.0-alpha4",
     "drupal/file_browser": "^1.0-alpha4",
     "drupal/media_entity_browser": "^1.0-beta3"

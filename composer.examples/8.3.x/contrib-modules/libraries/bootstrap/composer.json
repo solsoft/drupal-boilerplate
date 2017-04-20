@@ -1,0 +1,16 @@
+{
+  "extra": {
+    "installer-paths": {
+    }
+  },
+  "repositories": {
+  },
+  "require": {
+    "drupal/bootstrap_library": "^1.8",
+    "twbs/bootstrap-sass": "^3.3"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}

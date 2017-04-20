@@ -1,0 +1,65 @@
+{
+  "extra": {
+    "installer-paths": {
+      "assets/commonmark/": ["thephpleague/commonmark"],
+      "assets/commonmark-attributes-extension/": ["webuni/commonmark-attributes-extension"],
+      "assets/commonmark-table-extension/": ["webuni/commonmark-table-extension"]
+    }
+  },
+  "repositories": {
+    "thephpleague/commonmark": {
+      "type": "package",
+      "package": {
+        "name": "thephpleague/commonmark",
+        "version": "0.10.0",
+        "dist": {
+          "url": "https://github.com/thephpleague/commonmark/archive/0.10.0.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "commonmark"
+        }
+      }
+    },
+    "webuni/commonmark-attributes-extension": {
+      "type": "package",
+      "package": {
+        "name": "webuni/commonmark-attributes-extension",
+        "version": "0.2.0",
+        "dist": {
+          "url": "https://github.com/webuni/commonmark-attributes-extension/archive/0.2.0.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "commonmark-attributes-extension"
+        }
+      }
+    },
+    "webuni/commonmark-table-extension": {
+      "type": "package",
+      "package": {
+        "name": "webuni/commonmark-table-extension",
+        "version": "0.3.0",
+        "dist": {
+          "url": "https://github.com/webuni/commonmark-table-extension/archive/0.3.0.zip",
+          "type": "zip"
+        },
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "commonmark-table-extension"
+        }
+      }
+    }
+  },
+  "require": {
+    "thephpleague/commonmark": "^0.10.0",
+    "webuni/commonmark-attributes-extension": "^0.2.0",
+    "webuni/commonmark-table-extension": "^0.3.0"
+  },
+  "require-dev": {
+  },
+  "require-disabled": {
+  }
+}
