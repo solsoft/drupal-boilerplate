@@ -22,9 +22,6 @@ Composer will look for composer.json configuration files in a variety of places.
 The main file is loaded with the minimum set of configuration and dependencies:
 - composer.json
 
-Custom configuration and dependencies may be loaded from:
-- composer/composer.local.json
-
 ### Composer.examples directory
 The `composer/` directory contains files that add additional dependencies as
 Drupal Contributed modules and themes, as well as external assets/libraries.  
@@ -38,6 +35,9 @@ Composer will look for files under these paths:
 - composer/*/composer.json
 - composer/*/*/composer.json
 - composer/*/*/*/composer.json
+
+Custom configuration and dependencies may be loaded from:
+- composer/composer.local.json
 
 ### Drupal Custom directories
 Additional files can be included for custom Drupal profiles, modules and themes:

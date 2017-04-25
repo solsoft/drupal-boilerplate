@@ -1,4 +1,10 @@
 # drupal-boilerplate
+[![Build Status](https://travis-ci.org/solsoft/drupal-boilerplate.svg?branch=7.x)](https://travis-ci.org/solsoft/drupal-boilerplate)
+[![Dependency Status](https://www.versioneye.com/user/projects/58fea3686ac171431cf9511a/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58fea3686ac171431cf9511a)
+[![Packagist](https://img.shields.io/packagist/vpre/solsoft/drupal-boilerplate.svg)](https://packagist.org/packages/solsoft/drupal-boilerplate)
+[![PHP 7 ready](https://php7ready.timesplinter.ch/solsoft/drupal-boilerplate/7.x/badge.svg)](https://travis-ci.org/solsoft/drupal-boilerplate)
+[![License](https://poser.pugx.org/solsoft/drupal-boilerplate/license)](https://github.com/solsoft/drupal-boilerplate/blob/7.x/LICENSE)
+
 Boilerplate for deploying new [Drupal](https://drupal.org/) projects. Based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project).  
 Using [Composer](https://getcomposer.org/) and associated plugins, and the official [packages.drupal.org](http://drupal-composer.org/) repository.  
 Packages are published and updated regularly at [Packagist](https://packagist.org/packages/solsoft/drupal-boilerplate).  
@@ -19,7 +25,7 @@ Before starting, consult the Composer reference for standard usage instructions.
 Use `composer create-project` to deploy a new project, specifying one branch.
 
 ```
-composer create-project solsoft/drupal-boilerplate:8.x-dev my-project --stability dev --no-interaction;
+composer create-project solsoft/drupal-boilerplate:7.x-dev my-project --stability dev --no-interaction;
 cd my-project;
 composer update;
 composer show;
@@ -32,7 +38,7 @@ Clone the git repository pointing to one of the development branches.
 Merge requests should be submitted against these branches.
 
 ```
-git clone -b 8.x git@github.com:solsoft/drupal-boilerplate.git;
+git clone -b 7.x git@github.com:solsoft/drupal-boilerplate.git;
 cd drupal-boilerplate;
 composer install;
 composer update;
@@ -43,12 +49,12 @@ composer site-run;
 
 ### Extras
 Optionally you may run `composer examples-deploy` to install example Drupal
+the `vendor/`, `assets/` and `app/` directories and the `composer.lock` file.  
 Contributed libraries, modules and themes example dependencies. These can
 also be undeployed by running `composer examples-undeploy`. See more
 information about this in the `composer.examples` directory.  
 Drush can be deployed locally by running `composer drush-deploy`.  
 The project can be reset by running `composer cleanup-project` to delete
-the `vendor/`, `assets/` and `app/` directories and the `composer.lock` file.
 
 ## Credits
 See the [composer README](composer/README.md) for information about composer packages.  
