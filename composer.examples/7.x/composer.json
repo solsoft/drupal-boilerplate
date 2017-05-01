@@ -2,6 +2,6 @@
   "extra": {
   },
   "require": {
-    "drupal/drupal": "7.*@stable"
+    "drupal/drupal": "^7.54"
   }
 }
