@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/pathauto": "^1.0-rc1",
+    "drupal/pathauto": "^1.0",
     "drupal/subpathauto": "^1.0-beta1",
     "drupal/redirect": "^1.0-alpha4",
     "drupal/mpac": "^1.0-rc1"

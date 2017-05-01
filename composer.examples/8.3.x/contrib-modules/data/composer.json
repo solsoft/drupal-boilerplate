@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/restui": "^1.13"
+    "drupal/restui": "^1.14"
   },
   "require-dev": {
   },

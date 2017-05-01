@@ -9,7 +9,7 @@
     "drupal/media_entity": "^1.6",
     "drupal/media_entity_image": "^1.2",
     "drupal/media_entity_audio": "^1.0-beta3",
-    "drupal/video_embed_field": "^1.4"
+    "drupal/video_embed_field": "^1.5"
   },
   "require-dev": {
   },

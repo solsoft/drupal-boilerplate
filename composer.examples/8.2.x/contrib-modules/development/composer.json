@@ -8,7 +8,7 @@
   "require": {
   },
   "require-dev": {
-    "drupal/devel": "^1.0.0-rc1",
+    "drupal/devel": "^1.0.0-rc2",
     "drupal/styleguide": "^1.0-alpha2"
   },
   "require-disabled": {
