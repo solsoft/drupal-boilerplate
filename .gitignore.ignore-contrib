@@ -1,0 +1,106 @@
+# See documentation for gitignore at https://git-scm.com/docs/gitignore or man(5).
+# A global gitignore file should be created to ignore typical temporary files.
+# Use the tool gi at https://www.gitignore.io to provide this.
+
+#
+# Deployment files
+#
+
+# Ignore composer binary
+composer.phar
+
+# Ignore example composer configuration
+/composer.examples/
+
+# Ignore other projects git repositories
+/vendor/**/.git
+/assets/**/.git
+/app/**/.git
+
+#
+# Build generated files
+#
+
+# Ignore build caches
+/**/.sass-cache
+
+#
+# Vendor and Contributed code
+#
+
+# Ignore files deployed in vendor and assets
+/vendor/
+/assets/
+
+# Ignore Drush Contrib code
+/drush/contrib/
+
+# Ignore Drupal Core code
+/app/core/
+/app/libraries/README.txt
+/app/profiles/README.txt
+/app/modules/README.txt
+/app/themes/README.txt
+/app/sites/*/libraries/README.txt
+/app/sites/*/profiles/README.txt
+/app/sites/*/modules/README.txt
+/app/sites/*/themes/README.txt
+/app/sites/README.txt
+/app/sites/example.sites.php
+/app/sites/*/default.settings.php
+
+# Ignore Drupal Contrib code
+/app/libraries/
+/app/libraries/.gitkeep
+/app/profiles/contrib/
+/app/profiles/contrib/.gitkeep
+/app/modules/contrib/
+/app/modules/contrib/.gitkeep
+/app/themes/contrib/
+/app/themes/contrib/.gitkeep
+/app/sites/*/libraries/
+/app/sites/*/libraries/.gitkeep
+/app/sites/*/profiles/contrib/
+/app/sites/*/profiles/contrib/.gitkeep
+/app/sites/*/modules/contrib/
+/app/sites/*/modules/contrib/.gitkeep
+/app/sites/*/themes/contrib/
+/app/sites/*/themes/contrib/.gitkeep
+
+#
+# Custom code
+#
+
+# Include Drupal Custom code
+!/app/profiles/custom
+!/app/profiles/custom/.gitkeep
+!/app/modules/custom
+!/app/modules/custom/.gitkeep
+!/app/themes/custom
+!/app/themes/custom/.gitkeep
+!/app/sites/*/profiles/custom
+!/app/sites/*/profiles/custom/.gitkeep
+!/app/sites/*/modules/custom
+!/app/sites/*/modules/custom/.gitkeep
+!/app/sites/*/themes/custom
+!/app/sites/*/themes/custom/.gitkeep
+
+#
+# Site specific files
+#
+
+# Ignore configuration files that may contain sensitive information
+/app/sites/sites.php
+/app/sites/*/*settings*.php
+
+# Ignore paths that may contain user-generated content
+/app/sites/*/files
+/app/sites/*/public
+/app/sites/*/private
+/app/sites/*/files-public
+/app/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/app/sites/*/translations
+/app/sites/*/tmp
+/app/sites/*/cache
