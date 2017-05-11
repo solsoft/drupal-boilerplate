@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "simplesamlphp/simplesamlphp": "^1.14.12"
+    "simplesamlphp/simplesamlphp": "^1.14.14"
   },
   "require-dev": {
   },

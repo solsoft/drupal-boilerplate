@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/ds": "^3.0-beta3"
+    "drupal/ds": "^3.0-rc1"
   },
   "require-dev": {
   },

@@ -8,7 +8,7 @@
   "require": {
     "drupal/externalauth": "^1.0",
     "drupal/simplesamlphp_auth": "^3.0-rc2",
-    "simplesamlphp/simplesamlphp": "^1.14.13"
+    "simplesamlphp/simplesamlphp": "^1.14.14"
   },
   "require-dev": {
   },

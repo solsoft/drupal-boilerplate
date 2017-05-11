@@ -214,14 +214,14 @@
     "oomphinc/composer-installers-extender": "^1.1",
     "mnsami/composer-custom-directory-installer": "^1.1",
     "derhasi/composer-preserve-paths": "^0.1",
+    "drupal-composer/drupal-scaffold": "^2.3",
     "webflo/drupal-finder": "^0.2.1",
-    "drupal-composer/drupal-scaffold": "^2.2",
-    "drupal/core": "^8.3.0"
+    "drupal/core": "^8.3.2"
   },
   "require-dev": {
     "drush/drush": "^8.1.11",
-    "drupal/console": "^1.0-rc17",
-    "drupal/coder": "^8.2.11"
+    "drupal/console": "^1.0-rc19",
+    "drupal/coder": "^8.2.12"
   },
   "require-disabled": {
   }
