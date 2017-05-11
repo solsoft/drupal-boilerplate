@@ -172,7 +172,8 @@
     "drupal/drupal": "^7.54"
   },
   "require-dev": {
-    "drush/drush": "^8.1.11"
+    "drush/drush": "^8.1.11",
+    "drupal/coder": "^8.2.12"
   },
   "require-disabled": {
   }

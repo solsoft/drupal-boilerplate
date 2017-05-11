@@ -10,7 +10,6 @@
   "require-dev": {
     "drupal/devel": "^1.5",
     "drupal/devel_shortcuts": "^1.1",
-    "drupal/coder": "^2.6",
     "drupal/styleguide": "^1.1"
   },
   "require-disabled": {
