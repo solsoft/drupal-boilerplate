@@ -8,7 +8,7 @@
   "require": {
     "drupal/simplesamlphp_auth": "^2.0-alpha2",
     "drupal/drupalauth4ssp": "^1.0-beta5",
-    "simplesamlphp/simplesamlphp": "^1.14.13"
+    "simplesamlphp/simplesamlphp": "^1.14.14"
   },
   "require-dev": {
   },
