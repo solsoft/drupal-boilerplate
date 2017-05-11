@@ -10,7 +10,7 @@
 composer.phar
 
 # Ignore example composer configuration
-/composer.examples/
+/config/composer.examples/
 
 # Ignore other projects git repositories
 /vendor/**/.git

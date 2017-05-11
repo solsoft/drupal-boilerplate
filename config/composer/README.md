@@ -23,21 +23,21 @@ The main file is loaded with the minimum set of configuration and dependencies:
 - composer.json
 
 ### Composer.examples directory
-The `composer/` directory contains files that add additional dependencies as
-Drupal Contributed modules and themes, as well as external assets/libraries.  
-These are not by default read by composer and must be copied to the `composer`
-directory for inclusion in the project deployment.
+The `config/composer/` directory contains files that add additional dependencies
+as Drupal Contributed modules and themes, as well as external assets/libraries.  
+These are not by default read by composer and must be copied to the
+`config/composer/` directory for inclusion in the project deployment.
 
 ### Composer directory
-The `composer/` directory may contain files to add additional dependencies.  
+The `config/composer/` directory may contain files to add additional dependencies.  
 Composer will look for files under these paths:
-- composer/composer.json
-- composer/*/composer.json
-- composer/*/*/composer.json
-- composer/*/*/*/composer.json
+- config/composer/composer.json
+- config/composer/*/composer.json
+- config/composer/*/*/composer.json
+- config/composer/*/*/*/composer.json
 
 Custom configuration and dependencies may be loaded from:
-- composer/composer.local.json
+- config/composer/composer.local.json
 
 ### Drupal Custom directories
 Additional files can be included for custom Drupal profiles, modules and themes:

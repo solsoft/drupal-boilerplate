@@ -41,10 +41,10 @@
     "merge-plugin": {
       "include": [
         "app/core/composer.json",
-        "composer/composer.json",
-        "composer/*/composer.json",
-        "composer/*/*/composer.json",
-        "composer/*/*/*/composer.json",
+        "config/composer/composer.json",
+        "config/composer/*/composer.json",
+        "config/composer/*/*/composer.json",
+        "config/composer/*/*/*/composer.json",
         "app/profiles/custom/*/composer.json",
         "app/profiles/custom/*/*/composer.json",
         "app/profiles/custom/*/*/*/composer.json",
@@ -54,7 +54,7 @@
         "app/themes/custom/*/composer.json",
         "app/themes/custom/*/*/composer.json",
         "app/themes/custom/*/*/*/composer.json",
-        "composer/composer.local.json"
+        "config/composer/composer.local.json"
       ],
       "recurse": false,
       "replace": false,
@@ -152,7 +152,7 @@
       "mv LICENSE LICENSE.composer",
       "mv README.md README.composer.md",
       "rm -f .gitignore; mv .gitignore.include-contrib .gitignore",
-      "mv composer/composer.local.example.json composer/composer.local.json",
+      "mv config/composer/composer.local.example.json config/composer/composer.local.json",
       "mkdir -p app/profiles/contrib app/profiles/custom/; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
       "mkdir -p app/modules/contrib app/modules/custom/; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
       "mkdir -p app/themes/contrib app/themes/custom/; touch app/themes/contrib/.gitkeep app/themes/custom/.gitkeep",
@@ -173,11 +173,11 @@
       "rm -Rf vendor/"
     ],
     "examples-deploy": [
-      "cp -R composer.examples/8.3.x/* composer/"
+      "cp -R config/composer.examples/8.3.x/* config/composer/"
     ],
     "examples-undeploy": [
-      "rm -f composer/composer.json",
-      "rm -Rf composer/upgrade-* composer/contrib-*"
+      "rm -f config/composer/composer.json",
+      "rm -Rf config/composer/upgrade-* config/composer/contrib-*"
     ],
     "drush-deploy": [
       "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
