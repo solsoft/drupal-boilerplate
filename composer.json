@@ -162,6 +162,17 @@
     "drupal/drupal": "8.*"
   },
   "require": {
+    "php": ">=5.2.4",
+    "ext-spl": "*",
+    "ext-date": "*",
+    "ext-hash": "*",
+    "ext-pcre": "*",
+    "ext-filter": "*",
+    "ext-session": "*",
+    "ext-json": "*",
+    "ext-dom": "*",
+    "ext-gd": "*",
+    "ext-pdo": "*",
     "cweagans/composer-patches": "^1.6",
     "wikimedia/composer-merge-plugin": "^1.4",
     "composer/installers": "^1.3",
@@ -174,6 +185,23 @@
   "require-dev": {
     "drush/drush": "^8.1.11",
     "drupal/coder": "^8.2.12"
+  },
+  "suggest": {
+    "php": ">=5.4.0",
+    "ext-xdebug": "*",
+    "ext-twig": "*",
+    "ext-xml": "*",
+    "ext-simplexml": "*",
+    "ext-openssl": "*",
+    "ext-ssh2": "*",
+    "ext-curl": "*",
+    "ext-imagick": "*",
+    "ext-soap": "*",
+    "ext-ldap": "*",
+    "ext-redis": "*",
+    "ext-mysqli": "*",
+    "ext-pgsql": "*",
+    "ext-sqlite3": "*"
   },
   "require-disabled": {
   }

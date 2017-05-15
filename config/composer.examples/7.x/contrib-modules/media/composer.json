@@ -8,7 +8,7 @@
   "require": {
     "drupal/file_entity": "^2.0-beta3",
     "drupal/file_admin": "^1.0-beta9",
-    "drupal/media": "^2.0",
+    "drupal/media": "^2.2",
     "drupal/remote_stream_wrapper": "^1.0-rc1"
   },
   "require-dev": {
