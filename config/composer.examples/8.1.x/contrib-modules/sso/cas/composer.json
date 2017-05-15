@@ -7,7 +7,7 @@
   },
   "require": {
     "drupal/externalauth": "^1.0",
-    "drupal/cas": "^1.0-beta3",
+    "drupal/cas": "^1.0-rc1",
     "drupal/cas_server": "^1.0-beta1"
   },
   "require-dev": {

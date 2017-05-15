@@ -7,7 +7,7 @@
   },
   "require": {
     "drupal/purge": "^3.0-beta6",
-    "drupal/cacheflush": "^1.0-alpha2"
+    "drupal/cacheflush": "^1.0-beta1"
   },
   "require-dev": {
   },

@@ -6,7 +6,7 @@
   "repositories": {
   },
   "require": {
-    "drupal/bootstrap": "^3.2",
+    "drupal/bootstrap": "^3.4",
     "drupal/bootstrap_layouts": "^4.1"
   },
   "require-dev": {
