@@ -151,7 +151,7 @@
     "post-create-project-cmd": [
       "mv LICENSE LICENSE.composer",
       "mv README.md README.composer.md",
-      "rm -f .gitignore; mv .gitignore.include-contrib .gitignore",
+      "rm -f .gitignore; cp config/.gitignore.examples/.gitignore.include-contrib .gitignore",
       "mv config/composer/composer.local.example.json config/composer/composer.local.json",
       "mkdir -p app/profiles/contrib app/profiles/custom/; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
       "mkdir -p app/modules/contrib app/modules/custom/; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
