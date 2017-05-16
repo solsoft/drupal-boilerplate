@@ -9,7 +9,8 @@
 # Ignore composer binary
 composer.phar
 
-# Ignore example composer configuration
+# Ignore example configuration
+/config/gitignore.examples/
 /config/composer.examples/
 
 # Ignore other projects git repositories
