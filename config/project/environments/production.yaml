@@ -1,0 +1,23 @@
+---
+
+stack:
+    php:
+        launch: false
+        proto: http
+        host: production.example.com
+        port: 80
+    sql:
+        type: mysql
+        prefix:
+    mysql:
+        host: mysql.example.com
+        port: 3306
+        suname: root
+        supass: test
+        username: drupal
+        password: test
+        database: drupal_production
+
+application:
+    basic:
+        uri: www.example.com

@@ -1,0 +1,21 @@
+---
+
+deployment:
+    project: drupal-example-site
+    debug: false
+
+stack:
+    php:
+        taskType: foreground
+        ini: true
+
+application:
+    basic:
+        name: Drupal Example Site
+        email: drupal@example.com
+        locale: en
+        profile: standard
+    adminUser:
+        name: admin
+        pass: test
+        email: admin@example.com
