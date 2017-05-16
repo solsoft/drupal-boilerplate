@@ -1,0 +1,17 @@
+---
+
+stack:
+    php:
+        launch: true
+        proto: http
+        host: 127.0.0.1
+        port: 8080
+    sql:
+        type: sqlite
+        prefix:
+    sqlite:
+        dbfile: default.sqlite
+
+application:
+    basic:
+        uri: localhost

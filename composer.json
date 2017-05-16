@@ -110,23 +110,13 @@
       "mv LICENSE LICENSE.composer",
       "mv README.md README.composer.md",
       "rm -f .gitignore; cp config/.gitignore.examples/.gitignore.include-contrib .gitignore",
-      "mv config/composer/composer.local.example.json config/composer/composer.local.json",
-      "mkdir -p app/profiles/contrib app/profiles/custom/; touch app/profiles/contrib/.gitkeep app/profiles/custom/.gitkeep",
-      "mkdir -p app/modules/contrib app/modules/custom/; touch app/modules/contrib/.gitkeep app/modules/custom/.gitkeep",
-      "mkdir -p app/themes/contrib app/themes/custom/; touch app/themes/contrib/.gitkeep app/themes/custom/.gitkeep",
-      "mkdir -p assets/; touch assets/.gitkeep",
-      "if [ -d app/libraries/ ] && [ -f app/libraries/README.txt ]; then mv app/libraries/README.txt assets/README.txt; fi",
-      "if [ -d app/libraries/ ]; then rm -Rf app/libraries; else rm -f app/libraries; fi",
-      "ln -s ../assets app/libraries"
+      "mv config/composer/composer.local.example.json config/composer/composer.local.json"
     ],
     "cleanup-project": [
       "rm -f composer.lock",
       "if [ -d app/ ]; then find app/ -maxdepth 1 -type f -exec rm -f {} +; fi",
       "rm -f app/sites/example.*.php app/sites/default/default.*",
       "rm -Rf app/core/",
-      "if [ -d app/profiles/contrib/ ]; then find app/profiles/contrib/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
-      "if [ -d app/modules/contrib/ ]; then find app/modules/contrib/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
-      "if [ -d app/themes/contrib/ ]; then find app/themes/contrib/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
       "if [ -d assets/ ]; then find assets/ -maxdepth 1 -type d -exec rm -Rf {} +; fi",
       "rm -Rf vendor/"
     ],
@@ -139,12 +129,6 @@
     ],
     "drush-deploy": [
       "cp vendor/drush/drush/examples/drush.wrapper drush/drush.wrapper"
-    ],
-    "site-install": [
-      "drush/drush.wrapper site-install --verbose --yes --root=../app/core --uri=127.0.0.1:8080 --db-url=sqlite://../tmp/site.sqlite"
-    ],
-    "site-run": [
-      "drush/drush.wrapper runserver --root=../app/core --uri=127.0.0.1:8080 http://127.0.0.1:8080"
     ]
   },
   "autoload": {
@@ -162,7 +146,7 @@
     "drupal/drupal": "8.*"
   },
   "require": {
-    "php": ">=5.2.4",
+    "php": ">=5.4",
     "ext-spl": "*",
     "ext-date": "*",
     "ext-hash": "*",
@@ -180,6 +164,9 @@
     "mnsami/composer-custom-directory-installer": "^1.1",
     "derhasi/composer-preserve-paths": "^0.1",
     "davidbarratt/drupal-structure": "^1.0",
+    "consolidation/robo": "^1.0.6",
+    "boedah/robo-drush": "^3.0.2",
+    "symfony/yaml": "^2.8",
     "drupal/drupal": "^7.54"
   },
   "require-dev": {
@@ -187,7 +174,7 @@
     "drupal/coder": "^8.2.12"
   },
   "suggest": {
-    "php": ">=5.4.0",
+    "php": ">=5.5, <7.0",
     "ext-xdebug": "*",
     "ext-twig": "*",
     "ext-xml": "*",

@@ -22,8 +22,11 @@ composer.phar
 # Build generated files
 #
 
-# Ignore build caches
-/**/.sass-cache
+# Ignore build artifacts and caches
+/build/
+
+# Ignore additional sass caches
+/**/.sass-cache/
 
 #
 # Vendor and Contributed code
@@ -42,13 +45,9 @@ composer.phar
 !/app/profiles/README.txt
 !/app/modules/README.txt
 !/app/themes/README.txt
-!/app/sites/*/libraries/README.txt
-!/app/sites/*/profiles/README.txt
-!/app/sites/*/modules/README.txt
-!/app/sites/*/themes/README.txt
-!/app/sites/README.txt
-!/app/sites/example.sites.php
-!/app/sites/*/default.settings.php
+!/data/sites/README.txt
+!/data/sites/example.sites.php
+!/data/sites/*/default.settings.php
 
 # Include Drupal Contrib code
 !/app/libraries/
@@ -59,14 +58,19 @@ composer.phar
 !/app/modules/contrib/.gitkeep
 !/app/themes/contrib/
 !/app/themes/contrib/.gitkeep
-!/app/sites/*/libraries/
-!/app/sites/*/libraries/.gitkeep
-!/app/sites/*/profiles/contrib/
-!/app/sites/*/profiles/contrib/.gitkeep
-!/app/sites/*/modules/contrib/
-!/app/sites/*/modules/contrib/.gitkeep
-!/app/sites/*/themes/contrib/
-!/app/sites/*/themes/contrib/.gitkeep
+!/data/sites/*/libraries/
+!/data/sites/*/libraries/.gitkeep
+!/data/sites/*/profiles/contrib/
+!/data/sites/*/profiles/contrib/.gitkeep
+!/data/sites/*/modules/contrib/
+!/data/sites/*/modules/contrib/.gitkeep
+!/data/sites/*/themes/contrib/
+!/data/sites/*/themes/contrib/.gitkeep
+
+# Ignore Drupal symlinks
+/web
+/app/libraries
+/app/sites
 
 #
 # Custom code
@@ -79,29 +83,31 @@ composer.phar
 !/app/modules/custom/.gitkeep
 !/app/themes/custom
 !/app/themes/custom/.gitkeep
-!/app/sites/*/profiles/custom
-!/app/sites/*/profiles/custom/.gitkeep
-!/app/sites/*/modules/custom
-!/app/sites/*/modules/custom/.gitkeep
-!/app/sites/*/themes/custom
-!/app/sites/*/themes/custom/.gitkeep
+!/data/sites/*/profiles/custom
+!/data/sites/*/profiles/custom/.gitkeep
+!/data/sites/*/modules/custom
+!/data/sites/*/modules/custom/.gitkeep
+!/data/sites/*/themes/custom
+!/data/sites/*/themes/custom/.gitkeep
 
 #
 # Site specific files
 #
 
 # Ignore configuration files that may contain sensitive information
-/app/sites/sites.php
-/app/sites/*/*settings*.php
+/data/sites/sites.php
+/data/sites/*/settings*.php
+
+# Ignore sqlite database files that may exist
+/data/*.sqlite
 
 # Ignore paths that may contain user-generated content
-/app/sites/*/files
-/app/sites/*/public
-/app/sites/*/private
-/app/sites/*/files-public
-/app/sites/*/files-private
+/data/sites/*/files
+/data/sites/*/files*
+/data/sites/*/public
+/data/sites/*/private
 
 # Ignore paths that may contain temporary files
-/app/sites/*/translations
-/app/sites/*/tmp
-/app/sites/*/cache
+/data/sites/*/translations
+/data/sites/*/tmp
+/data/sites/*/cache

@@ -1,0 +1,169 @@
+---
+
+deployment:
+    _type: dir
+    _targetName: .
+    _targetPerms: 0775
+    composerlock:
+        _type: file
+        _targetName: composer.lock
+        _targetPerms: 0664
+    scripts:
+        _type: dir
+        _targetName: scripts
+        _targetPerms: 0775
+        robo:
+            _type: dir
+            _targetName: robo
+            _targetPerms: 0775
+    config:
+        _type: dir
+        _targetName: config
+        _targetPerms: 0775
+        project:
+            _type: dir
+            _targetName: project
+            _targetPerms: 0775
+            envs:
+                _type: dir
+                _targetName: environments
+                _targetPerms: 0775
+        composer:
+            _type: dir
+            _targetName: composer
+            _targetPerms: 0775
+        composer-examples:
+            _type: dir
+            _targetName: composer.examples
+            _targetPerms: 0775
+    build:
+        _type: dir
+        _targetName: build
+        _targetPerms: 0775
+        sass:
+            _type: dir
+            _targetName: .sass-cache
+            _targetPerms: 0775
+    vendor:
+        _type: dir
+        _targetName: vendor
+        _targetPerms: 0775
+        gitkeep:
+            _type: file
+            _targetName: .gitkeep
+            _targetPerms: 0644
+    assets:
+        _type: dir
+        _targetName: assets
+        _targetPerms: 0775
+        gitkeep:
+            _type: file
+            _targetName: .gitkeep
+            _targetPerms: 0644
+    app:
+        _type: dir
+        _targetName: app
+        _targetPerms: 0775
+        core:
+            _type: dir
+            _targetName: core
+            _targetPerms: 0775
+        profiles:
+            _type: dir
+            _targetName: profiles
+            _targetPerms: 0775
+            contrib:
+                _type: dir
+                _targetName: contrib
+                _targetPerms: 0755
+                gitkeep:
+                    _type: file
+                    _targetName: .gitkeep
+                    _targetPerms: 0644
+            custom:
+                _type: dir
+                _targetName: custom
+                _targetPerms: 0755
+                gitkeep:
+                    _type: file
+                    _targetName: .gitkeep
+                    _targetPerms: 0644
+        modules:
+            _type: dir
+            _targetName: modules
+            _targetPerms: 0775
+            contrib:
+                _type: dir
+                _targetName: contrib
+                _targetPerms: 0755
+                gitkeep:
+                    _type: file
+                    _targetName: .gitkeep
+                    _targetPerms: 0644
+            custom:
+                _type: dir
+                _targetName: custom
+                _targetPerms: 0755
+                gitkeep:
+                    _type: file
+                    _targetName: .gitkeep
+                    _targetPerms: 0644
+        themes:
+            _type: dir
+            _targetName: themes
+            _targetPerms: 0775
+            contrib:
+                _type: dir
+                _targetName: contrib
+                _targetPerms: 0755
+                gitkeep:
+                    _type: file
+                    _targetName: .gitkeep
+                    _targetPerms: 0644
+            custom:
+                _type: dir
+                _targetName: custom
+                _targetPerms: 0755
+                gitkeep:
+                    _type: file
+                    _targetName: .gitkeep
+                    _targetPerms: 0644
+        libraries:
+            _type: symlink
+            _targetName: ../assets
+            _targetPerms: 0775
+            _linkName: libraries
+        sites:
+            _type: symlink
+            _targetName: ../data/sites
+            _targetPerms: 0775
+            _linkName: sites
+    web:
+        _type: symlink
+        _targetName: app/core
+        _targetPerms: 0775
+        _linkName: web
+    data:
+        _type: dir
+        _targetName: data
+        _targetPerms: 0775
+        sites:
+            _type: dir
+            _targetName: sites
+            _targetPerms: 0775
+            default:
+                _type: dir
+                _targetName: default
+                _targetPerms: 0755
+                settingsphp:
+                    _type: file
+                    _targetName: settings.php
+                    _targetPerms: 0644
+                public:
+                    _type: dir
+                    _targetName: files
+                    _targetPerms: 0755
+                private:
+                    _type: dir
+                    _targetName: private
+                    _targetPerms: 0750

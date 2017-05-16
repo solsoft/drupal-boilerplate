@@ -1,16 +1,48 @@
 # These .gitignore rules are for developing the boilerplate.
-# You should use the rules provided in .gitignore.example for projects.
+# You should use the rules provided with the files located at
+# config/gitignore.examples for new projects.
+
+#
+# Deployment files
+#
 
 # Ignore composer binary and lock file
 composer.phar
 composer.lock
+
+# Ignore custom project configuration
+/config/project/local.yaml
 
 # Ignore custom composer configuration
 /config/composer/composer.local.json
 /config/composer/composer.json
 /config/composer/*/*
 
+#
+# Build generated files
+#
+
+# Ignore build artifacts and caches
+/build/
+
+# Ignore additional sass caches
+/**/.sass-cache/
+
+#
+# Vendor and Contributed code
+#
+
 # Ignore files deployed in vendor, assets and app
 /vendor/
 /assets/
 /app/
+
+# Ignore Drupal symlinks
+/web
+
+#
+# Site specific files
+#
+
+# Ignore data directory and all user content
+/data/
